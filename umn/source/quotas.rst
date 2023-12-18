@@ -30,9 +30,9 @@ How Do I View My Quotas?
 How Do I Apply for a Higher Quota?
 ----------------------------------
 
-The system does not support online quota adjustment. If you need to adjust a quota, contact the administrator.
+The system does not support online quota adjustment. If you need to adjust a quota, contact the operations administrator.
 
-Before contacting the administrator, make sure that the following information has been obtained:
+Before contacting the operations administrator, make sure that the following information has been obtained:
 
 -  Domain name, project name, and project ID, which can be obtained by performing the following operations:
 

@@ -5,9 +5,9 @@
 Getting Started
 ===============
 
--  :ref:`Step 1: Create a Vault <en-us_topic_0170938140>`
+-  :ref:`Step 1: Create a Vault <cbr_07_0065>`
 -  :ref:`Step 2: Associate a Resource with the Vault <cbr_02_0009>`
--  :ref:`Step 3: Create a Backup <en-us_topic_0170938141>`
+-  :ref:`Step 3: Create a Backup <cbr_07_0066>`
 
 .. toctree::
    :maxdepth: 1
