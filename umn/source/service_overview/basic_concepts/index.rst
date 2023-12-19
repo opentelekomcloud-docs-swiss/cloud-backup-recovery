@@ -5,12 +5,12 @@
 Basic Concepts
 ==============
 
--  :ref:`CBR Basic Concepts <cbr_01_0012>`
+-  :ref:`CBR Concepts <cbr_01_0012>`
 -  :ref:`Region and AZ <cbr_01_0008>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   cbr_basic_concepts
+   cbr_concepts
    region_and_az

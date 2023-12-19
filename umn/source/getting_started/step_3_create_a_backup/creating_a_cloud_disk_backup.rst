@@ -7,7 +7,9 @@ Creating a Cloud Disk Backup
 
 This section describes how to quickly create a cloud disk backup.
 
-During the cloud disk backup, the performance of the disk is not affected. To ensure data integrity, back up the disk during off-peak hours when no write operation is performed on the disk.
+Backing up a server does not impact the disk performance.
+
+Peak hours of the backup service are from 00:00 to 06:00, during which backup schedules may be delayed. So you are advised to evaluate your service types and schedule backups outside of the backup peak hours.
 
 Prerequisites
 -------------
@@ -17,27 +19,37 @@ A disk can be backed up only when its status is **Available** or **In-use**. If 
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
-#. On the **Cloud Disk Backup** page, click the **Vaults** tab and find the vault to which the disk is associated.
+#. On the **Cloud Disk Backups** page, click the **Vaults** tab and find the vault to which the disk is associated.
 
-#. Choose **More** > **Perform Backup** in the **Operation** column. In the disk list, select the disk you want to back up. After a disk is selected, it is added to the list of selected disks. See :ref:`Figure 1 <cbr_02_0007__fig2557455115213>`.
+#. Perform backup in either of the following ways:
 
-   .. _cbr_02_0007__fig2557455115213:
+   -  Click **Perform Backup** in the **Operation** column. In the disk list, select the disk you want to back up. After a disk is selected, it is added to the list of selected disks. See :ref:`Figure 1 <cbr_02_0007__fig2557455115213>`.
 
-   **Figure 1** Selecting the disk to be backed up
+      .. _cbr_02_0007__fig2557455115213:
 
-   |image2|
+      **Figure 1** Selecting the disk to be backed up
+
+   |image3|
+
+   -  Click the vault name to go to the vault details page. On the **Associated Disks** tab page, locate the target disk and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0007__fig19972192464112>`.
+
+      .. _cbr_02_0007__fig19972192464112:
+
+      **Figure 2** Perform Backup
+
+      |image4|
 
    .. note::
 
-      The system will identify whether the selected disk is encrypted. If it is encrypted, its backup data will be stored in encrypted mode.
+      CBR will identify whether the selected disk is encrypted. If it is encrypted, the backups will be automatically encrypted.
 
-#. Set the **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0007__table4829135361311>` describes the parameters.
+#. Set **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0007__table4829135361311>` describes the parameters.
 
    .. _cbr_02_0007__table4829135361311:
 
@@ -52,7 +64,7 @@ Procedure
       |                       |                                                                                                                                                           |                       |
       |                       | .. note::                                                                                                                                                 |                       |
       |                       |                                                                                                                                                           |                       |
-      |                       |    You can use the default name, which is in the format of **manualbk\_**\ *xxxx*.                                                                        |                       |
+      |                       |    You can also use the default name **manualbk\_**\ *xxxx*.                                                                                              |                       |
       |                       |                                                                                                                                                           |                       |
       |                       |    If multiple disks are to be backed up, the system automatically adds suffixes to their backup names, for example, **backup-0001** and **backup-0002**. |                       |
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -61,33 +73,26 @@ Procedure
       |                       | It cannot exceed 255 characters.                                                                                                                          |                       |
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-#. Choose whether to enable full backup. If full backup is enabled, the system performs a full backup on every associated disk, which requires a larger capacity compared to an incremental backup. See :ref:`Figure 2 <cbr_02_0007__fig789511544815>`.
+#. Choose whether to enable full backup. If full backup is enabled, CBR performs a full backup on every associated disk, which requires a larger capacity compared to an incremental backup. See :ref:`Figure 3 <cbr_02_0007__fig789511544815>`.
 
    .. _cbr_02_0007__fig789511544815:
 
-   **Figure 2** Selecting full backup
+   **Figure 3** Full Backup
 
-   |image3|
+   |image5|
 
-#. (Optional) You can also click the vault name to open the detailed page of the vault. On the **Associated Disks** tab page, locate the target disk. Click **Perform Backup** in the **Operation** column of the disk. See :ref:`Figure 3 <cbr_02_0007__fig7287161212118>`.
+#. Click **OK**. CBR automatically creates a backup for the disk.
 
-   .. _cbr_02_0007__fig7287161212118:
-
-   **Figure 3** Perform Backup
-
-   |image4|
-
-#. Click **Yes**. The system automatically creates a backup for the disk.
-
-   On the **Backups** tab page of the **Cloud Disk Backup** page, if the status of the backup is **Available**, the backup task is successful.
+   On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 
-      If you delete files on the disk during the backup, the deleted files may fail to be backed up. Therefore, to ensure data integrity, you are advised to delete the target data after the current backup is complete and then perform a backup again.
+      If you delete data from the disk during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
 
-   After the backup is complete, you can use the backup to restore disk data on the **Cloud Disk Backup** page. For details, see :ref:`Restoring Data Using a Cloud Disk Backup <cbr_03_0033>`.
+   After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring from a Cloud Disk Backup <cbr_03_0033>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0000001186588456.png
-.. |image3| image:: /_static/images/en-us_image_0184062862.png
-.. |image4| image:: /_static/images/en-us_image_0000001232149603.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0000001186588456.png
+.. |image4| image:: /_static/images/en-us_image_0000001583873369.png
+.. |image5| image:: /_static/images/en-us_image_0184062862.png

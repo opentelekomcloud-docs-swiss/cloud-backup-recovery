@@ -8,7 +8,15 @@ Change History
 +-----------------------------------+-------------------------------------------------------------------------------------+
 | Released On                       | Description                                                                         |
 +===================================+=====================================================================================+
-| 2022-01-27                        | This issue is the second official release, which incorporates the following change: |
+| 2023-09-30                        | This issue is the fifth official release, which incorporates the following change:  |
+|                                   |                                                                                     |
+|                                   | Added support for resource migration.                                               |
++-----------------------------------+-------------------------------------------------------------------------------------+
+| 2023-09-06                        | This issue is the fourth official release, which incorporates the following change: |
+|                                   |                                                                                     |
+|                                   | Modified the maximum number of tags that can be added to a vault.                   |
++-----------------------------------+-------------------------------------------------------------------------------------+
+| 2022-01-27                        | This issue is the third official release, which incorporates the following change:  |
 |                                   |                                                                                     |
 |                                   | Deleted the BMS backup from section "Functions."                                    |
 +-----------------------------------+-------------------------------------------------------------------------------------+

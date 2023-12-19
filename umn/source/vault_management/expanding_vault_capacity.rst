@@ -10,19 +10,19 @@ You can expand the size of a vault if its total capacity is insufficient.
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
-#. On any backup page, locate the target vault and choose **More** > **Expand Capacity** in the **Operation** column. See :ref:`Figure 1 <cbr_03_0006__fig624235516355>`.
+#. Find the target vault and choose **More** > **Expand Capacity** in the **Operation** column. See :ref:`Figure 1 <cbr_03_0006__fig624235516355>`.
 
    .. _cbr_03_0006__fig624235516355:
 
    **Figure 1** Expanding vault capacity
 
-   |image2|
+   |image3|
 
 #. Enter the capacity to be added. The minimum value is **1**.
 
@@ -31,4 +31,5 @@ Procedure
 #. Return to the vault list and check that the capacity of the vault has been expanded.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0000001232187529.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0000001232187529.png

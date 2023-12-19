@@ -7,6 +7,7 @@ FAQs
 
 -  :ref:`Concepts <cbr_06_0002>`
 -  :ref:`Backup <cbr_06_0006>`
+-  :ref:`Capacity <en-us_topic_0000001750532005>`
 -  :ref:`Restoration <cbr_06_0012>`
 -  :ref:`Policies <cbr_06_0042>`
 -  :ref:`Others <cbr_06_0019>`
@@ -17,6 +18,7 @@ FAQs
 
    concepts/index
    backup/index
+   capacity/index
    restoration/index
    policies/index
    others/index

@@ -5,7 +5,7 @@
 How Do I Back Up Multiple Resources at a Time?
 ==============================================
 
-#. Log in to CBR Console and click **Cloud Server Backup** or **Cloud Disk Backup** on the left navigation pane. On the displayed page, create a backup vault. It is recommended that the capacity of the vault be at least twice the total size of resources to be backed up.
+#. Log in to the CBR console and click **Cloud Server Backups** or **Cloud Disk Backups** on the left navigation pane. On the displayed page, create a backup vault. It is recommended that the capacity of the vault be at least twice the total size of resources to be backed up.
 
 #. Associate resources with the vault during or after the creation.
 

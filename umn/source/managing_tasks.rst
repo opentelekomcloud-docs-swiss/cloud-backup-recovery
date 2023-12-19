@@ -5,20 +5,20 @@
 Managing Tasks
 ==============
 
-This section describes how to view tasks. The tasks list shows policy-driven backup tasks that have been executed over the past 30 days.
+You can view tasks in the task list, which shows policy-driven tasks that have been executed over the past 30 days.
 
 Prerequisites
 -------------
 
-At least one failed task exists.
+At least one task exists.
 
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select a region.
    c. Choose **Storage** > **Cloud Backup and Recovery** > **Tasks**.
 
    See :ref:`Figure 1 <cbr_03_0035__fig94661335195813>`.
@@ -29,7 +29,7 @@ Procedure
 
    |image2|
 
-#. You can filter tasks by task type, task status, task ID, resource ID, resource name, vault ID, vault name, and time.
+#. Filter tasks by task type, task status, task ID, resource ID, resource name, vault ID, vault name, and time.
 
 #. Click |image3| in front of the task to view the task details.
 

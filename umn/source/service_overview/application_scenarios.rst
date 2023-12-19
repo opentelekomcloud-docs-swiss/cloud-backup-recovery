@@ -5,19 +5,20 @@
 Application Scenarios
 =====================
 
-CBR backs up resources to maximize user data security and consistency and ensure service continuity. CBR is suitable for data backup and restoration.
+CBR is ideal for data backup and restoration. The backups can maximize your data security and consistency.
 
 Data Backup and Restoration
 ---------------------------
 
-CBR can be used to quickly restore data in the following scenarios to ensure service security and reliability.
+You can use CBR to quickly restore data to the latest backup point if any of the following incidents occur:
 
 -  Hacker or virus attacks
-
 -  Accidental deletion
-
 -  Application update errors
-
 -  System breakdown
 
-   For any of the incidents above, you can use CBR to restore data to the latest backup point prior to the incident.
+
+.. figure:: /_static/images/en-us_image_0000001723011753.png
+   :alt: **Figure 1** Data backup and restoration
+
+   **Figure 1** Data backup and restoration
