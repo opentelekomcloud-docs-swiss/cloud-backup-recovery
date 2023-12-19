@@ -12,8 +12,9 @@ Vaults
 -  :ref:`Deleting a Vault <deletevault>`
 -  :ref:`Dissociating Resources <removevaultresource>`
 -  :ref:`Associating Resources <addvaultresource>`
--  :ref:`Binding a Policy to a Vault <associatevaultpolicy>`
--  :ref:`Unbinding a Vault from a Policy <disassociatevaultpolicy>`
+-  :ref:`Applying a Policy to a Vault <associatevaultpolicy>`
+-  :ref:`Removing a Policy from a Vault <disassociatevaultpolicy>`
+-  :ref:`Migrating Resources <migratevaultresource>`
 
 .. toctree::
    :maxdepth: 1
@@ -26,5 +27,6 @@ Vaults
    deleting_a_vault
    dissociating_resources
    associating_resources
-   binding_a_policy_to_a_vault
-   unbinding_a_vault_from_a_policy
+   applying_a_policy_to_a_vault
+   removing_a_policy_from_a_vault
+   migrating_resources

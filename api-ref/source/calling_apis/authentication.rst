@@ -16,12 +16,7 @@ Token Authentication
 
 A token specifies temporary permissions in a computer system. During API authentication using a token, the token is added to requests to get permissions for calling the API. You can obtain a token by calling the `Obtaining User Token <https://docs.sc.otc.t-systems.com/api/iam/en-us_topic_0057845583.html>`__ API.
 
-A cloud service can be deployed as either a project-level service or global service.
-
--  For a project-level service, you need to obtain a project-level token. When you call the API, set **auth.scope** in the request body to **project**.
--  For a global service, you need to obtain a global token. When you call the API, set **auth.scope** in the request body to **domain**.
-
-IMS is a project-level service. When you call the API, set **auth.scope** in the request body to **project**.
+CBR is a project-level service. When you call the API, set **auth.scope** in the request body to **project**.
 
 .. code-block::
 
@@ -33,17 +28,17 @@ IMS is a project-level service. When you call the API, set **auth.scope** in the
                ],
                "password": {
                    "user": {
-                       "name": "username",
-                       "password": "********",
+                       "name": "username",   // IAM user name
+                       "password": "********",  // IAM user password
                        "domain": {
-                           "name": "domainname"
+                           "name": "domainname"  // Name of the account to which the IAM user belongs
                        }
                    }
                }
            },
            "scope": {
                "project": {
-                   "name": "xxxxxxxx"
+                   "name": "xxxxxxxx"    // Project Name
                }
            }
        }

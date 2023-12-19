@@ -1,19 +1,19 @@
-:original_name: RemoveVaultResource.html
+:original_name: AssociateVaultPolicy.html
 
-.. _RemoveVaultResource:
+.. _AssociateVaultPolicy:
 
-Dissociating Resources
-======================
+Applying a Policy to a Vault
+============================
 
 Function
 --------
 
-This API is used to dissociate resources from a vault.
+This API is used to apply a policy to a vault.
 
 URI
 ---
 
-POST /v3/{project_id}/vaults/{vault_id}/removeresources
+POST /v3/{project_id}/vaults/{vault_id}/associatepolicy
 
 .. table:: **Table 1** Path Parameters
 
@@ -37,13 +37,11 @@ Request Parameters
 
 .. table:: **Table 3** Request body parameters
 
-   +-----------------+-----------------+------------------+--------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                                              |
-   +=================+=================+==================+==========================================================================+
-   | resource_ids    | Yes             | Array of strings | IDs of the resources to be removed Minimum length: 1 Maximum length: 256 |
-   |                 |                 |                  |                                                                          |
-   |                 |                 |                  | Array Length: **1 - 256**                                                |
-   +-----------------+-----------------+------------------+--------------------------------------------------------------------------+
+   ========= ========= ====== ===========
+   Parameter Mandatory Type   Description
+   ========= ========= ====== ===========
+   policy_id No        String Policy ID.
+   ========= ========= ====== ===========
 
 Response Parameters
 -------------------
@@ -52,23 +50,34 @@ Response Parameters
 
 .. table:: **Table 4** Response body parameters
 
-   =================== ================ ====================
-   Parameter           Type             Description
-   =================== ================ ====================
-   remove_resource_ids Array of strings Removed resource IDs
-   =================== ================ ====================
+   +------------------+--------------------------------------------------------------------------------+-----------------------------------------+
+   | Parameter        | Type                                                                           | Description                             |
+   +==================+================================================================================+=========================================+
+   | associate_policy | :ref:`VaultPolicyResp <associatevaultpolicy__response_vaultpolicyresp>` object | Details of applying a policy to a vault |
+   +------------------+--------------------------------------------------------------------------------+-----------------------------------------+
+
+.. _associatevaultpolicy__response_vaultpolicyresp:
+
+.. table:: **Table 5** VaultPolicyResp
+
+   ========= ====== ======================================
+   Parameter Type   Description
+   ========= ====== ======================================
+   policy_id String Configured policy ID
+   vault_id  String Vault ID for configuring the policy ID
+   ========= ====== ======================================
 
 Example Requests
 ----------------
 
-Dissociating resources from a vault and deleting the backups of the resources
+Applying a policy to a vault
 
 .. code-block:: text
 
-   POST https://{endpoint}/v3/f841e01fd2b14e7fa41b6ae7aa6b0594/vaults/79bd9daa-884f-4f84-b8fe-235d58cd927d/removeresources
+   POST https://{endpoint}/v3/f841e01fd2b14e7fa41b6ae7aa6b0594/vaults/79bd9daa-884f-4f84-b8fe-235d58cd927d/associatepolicy
 
    {
-     "resource_ids" : [ "97595625-198e-4e4d-879b-9d53f68ba551" ]
+     "policy_id" : "7075c397-25a0-43e2-a83a-bb16eaca3ee5"
    }
 
 Example Responses
@@ -81,7 +90,10 @@ OK
 .. code-block::
 
    {
-     "remove_resource_ids" : [ "97595625-198e-4e4d-879b-9d53f68ba551" ]
+     "associate_policy" : {
+       "vault_id" : "2402058d-8373-4b0a-b848-d3c0dfdc71a8",
+       "policy_id" : "7075c397-25a0-43e2-a83a-bb16eaca3ee5"
+     }
    }
 
 Status Codes

@@ -96,7 +96,7 @@ Procedure
 
 #. Associate a server or disk with the vault.
 
-   a. Associate resources with the vault.
+   a. Associate resources.
 
       -  API
 
