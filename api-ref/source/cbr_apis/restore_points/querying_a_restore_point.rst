@@ -29,13 +29,11 @@ Request Parameters
 
 .. table:: **Table 2** Request header parameters
 
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                   |
-   +=================+=================+=================+===============================================================================================================================================================================+
-   | X-Auth-Token    | No              | String          | User token.                                                                                                                                                                   |
-   |                 |                 |                 |                                                                                                                                                                               |
-   |                 |                 |                 | Obtained by calling the corresponding IAM API. If the request is successfully processed, the value of **X-Subject-Token** included in the response header is the token value. |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type   | Description                                                                                                                                                         |
+   +==============+===========+========+=====================================================================================================================================================================+
+   | X-Auth-Token | No        | String | User token The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
@@ -81,7 +79,7 @@ Response Parameters
    +-----------------------+------------------------------------------------------------------------------------------+------------------------------------------------------------+
    | vault                 | :ref:`CheckpointPlanCreate <showcheckpoint__response_checkpointplancreate>` object       | Vault information                                          |
    +-----------------------+------------------------------------------------------------------------------------------+------------------------------------------------------------+
-   | extra_info            | :ref:`CheckpointExtraInfoResp <showcheckpoint__response_checkpointextrainforesp>` object |                                                            |
+   | extra_info            | :ref:`CheckpointExtraInfoResp <showcheckpoint__response_checkpointextrainforesp>` object | Extended information                                       |
    +-----------------------+------------------------------------------------------------------------------------------+------------------------------------------------------------+
 
 .. _showcheckpoint__response_checkpointplancreate:
@@ -180,41 +178,38 @@ Example Responses
 
 **Status code: 200**
 
-Response body of querying a restore point
+OK
 
 .. code-block::
 
    {
      "checkpoint" : {
        "status" : "available",
-       "created_at" : "2019-05-10T07:59:12.036982",
+       "created_at" : "2019-05-10T07:59:12.037+00:00",
        "vault" : {
-         "provider_id" : "0daac4c5-6707-4851-97ba-169e36266b66",
          "id" : "3b5816b5-f29c-4172-9d9a-76c719a659ce",
          "resources" : [ {
            "name" : "ecs-1f0f-0002",
-           "resource_size" : "40",
+           "resource_size" : 40,
            "protect_status" : "available",
            "type" : "OS::Nova::Server",
-           "id" : "94eba8b2-acc9-4d82-badc-127144cc5526",
-           "extra_info" : null
+           "id" : "94eba8b2-acc9-4d82-badc-127144cc5526"
          } ],
          "name" : "vault-be94"
        },
        "project_id" : "4229d7a45436489f8c3dc2b1d35d4987",
-       "id" : "8b0851a8-adf3-4f4c-a914-dead08bf9664",
-       "extra_info" : null
+       "id" : "8b0851a8-adf3-4f4c-a914-dead08bf9664"
      }
    }
 
 Status Codes
 ------------
 
-=========== =========================================
+=========== ===========
 Status Code Description
-=========== =========================================
-200         Response body of querying a restore point
-=========== =========================================
+=========== ===========
+200         OK
+=========== ===========
 
 Error Codes
 -----------

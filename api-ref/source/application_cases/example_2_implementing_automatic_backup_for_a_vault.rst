@@ -2,8 +2,8 @@
 
 .. _cbr_04_0027:
 
-Example 2: Implement Automatic Backup for a Vault
-=================================================
+Example 2: Implementing Automatic Backup for a Vault
+====================================================
 
 Scenarios
 ---------

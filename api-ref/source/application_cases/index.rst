@@ -6,7 +6,7 @@ Application Cases
 =================
 
 -  :ref:`Example 1: Creating an ECS Backup <cbr_04_0026>`
--  :ref:`Example 2: Implement Automatic Backup for a Vault <cbr_04_0027>`
+-  :ref:`Example 2: Implementing Automatic Backup for a Vault <cbr_04_0027>`
 -  :ref:`Example 3: Querying Backups <cbr_04_0028>`
 
 .. toctree::
@@ -14,5 +14,5 @@ Application Cases
    :hidden: 
 
    example_1_creating_an_ecs_backup
-   example_2_implement_automatic_backup_for_a_vault
+   example_2_implementing_automatic_backup_for_a_vault
    example_3_querying_backups
