@@ -5,7 +5,10 @@
 Sharing a Backup
 ================
 
-You can share a server or disk backup with other domains. Shared backups can be used to create servers or disks.
+Scenarios
+---------
+
+You can share server or disk backups with domains. Shared backups can be used to create servers or disks.
 
 Context
 -------
@@ -13,7 +16,7 @@ Context
 **Sharer**
 
 -  Backups can only be shared among domains in the same region. They cannot be shared across regions.
--  Encrypted backups cannot be shared.
+-  Encrypted backups cannot be shared. Backups cannot be shared across regions. Account to which a backup is shared must be in the same region as the backup.
 -  When a sharer deletes a shared backup, the backup will also be deleted from the recipient's account, but the disks or servers previously created using the backup will be retained.
 
 **Recipient**
@@ -45,8 +48,13 @@ Procedure for the Sharer
       |image3|
 
    a. Click the **Share Backup** tab.
+
    b. Enter the account name of the recipient.
-   c. Click **Add**. The account and project to be added will be displayed in the list. You can add multiple account names. A backup can be shared to a maximum of ten projects.
+
+   c. Click **Add**.
+
+      The account and project to be added will be displayed in the list. You can add multiple account names. A backup can be shared to a maximum of 10 projects.
+
    d. Click **OK**.
 
    -  Canceling sharing
@@ -74,6 +82,6 @@ Procedure for the Recipient
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001232281309.png
+.. |image3| image:: /_static/images/en-us_image_0000002021478318.png
 .. |image4| image:: /_static/images/en-us_image_0159365094.png
 .. |image5| image:: /_static/images/en-us_image_0000001599534545.jpg

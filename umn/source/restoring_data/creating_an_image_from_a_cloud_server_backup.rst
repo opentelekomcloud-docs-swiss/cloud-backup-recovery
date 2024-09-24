@@ -2,8 +2,8 @@
 
 .. _cbr_03_0016:
 
-Using a Backup to Create an Image
-=================================
+Creating an Image from a Cloud Server Backup
+============================================
 
 CBR allows you to create images using ECS backups. You can use the images to provision ECSs to rapidly restore service running environments.
 
@@ -17,7 +17,7 @@ Prerequisites
    -  You have optimized the Linux ECS (referring to `Optimizing a Linux Private Image <https://docs.sc.otc.t-systems.com/usermanual/ims/en-us_topic_0047501133.html>`__) and installed Cloud-Init (referring to `Installing Cloud-Init <https://docs.sc.otc.t-systems.com/usermanual/ims/en-us_topic_0030730603.html>`__).
    -  You have optimized the Windows ECS (referring to `Optimizing a Windows Private Image <https://docs.sc.otc.t-systems.com/usermanual/ims/en-us_topic_0047501112.html>`__) and installed Cloudbase-Init (referring to `Installing and Configuring Cloudbase-Init <https://docs.sc.otc.t-systems.com/usermanual/ims/en-us_topic_0030730602.html>`__).
 
--  The backup is in the **Available** state or in the **Creating** state which is marked with "Image can be created."
+-  The backup is in the **Available** state, or the backup is in the **Creating** state that is marked with "Image can be created."
 
    .. note::
 

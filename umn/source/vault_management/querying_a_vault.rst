@@ -99,11 +99,11 @@ Viewing Vault Details
 
    .. note::
 
-      The values of used capacity and backup space are rounded off to integers. CBR will display 0 GB for any backup space less than 1 GB. For example, there may be 200 MB backup space used, but it will be displayed as 0 GB on the console.
+      -  The values of used capacity and backup space are rounded off to integers. CBR will display 0 GB for any backup space less than 1 GB. For example, there may be 200 MB backup space used, but it will be displayed as 0 GB on the console.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001231789847.png
-.. |image4| image:: /_static/images/en-us_image_0000001232028391.png
+.. |image3| image:: /_static/images/en-us_image_0000001995695954.png
+.. |image4| image:: /_static/images/en-us_image_0000002032295753.png
 .. |image5| image:: /_static/images/en-us_image_0160751578.png
 .. |image6| image:: /_static/images/en-us_image_0160751578.png

@@ -2,8 +2,8 @@
 
 .. _cbr_03_0005:
 
-Dissociating a Resource
-=======================
+Dissociating Resources from a Vault
+===================================
 
 If you no longer need to back up an associated resource, dissociate it from your vault.
 
@@ -34,4 +34,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001232186949.png
+.. |image3| image:: /_static/images/en-us_image_0000002057589729.png

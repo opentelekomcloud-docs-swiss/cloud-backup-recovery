@@ -2,16 +2,16 @@
 
 .. _cbr_03_0116:
 
-Migrating a Resource
-====================
+Migrating Resources from a Vault
+================================
 
 Migrating a resource means that you dissociate a resource from a vault and then associate it to another vault. All backups of the resource will be migrated to the destination vault.
 
-Constraints
------------
+Notes and Constraints
+---------------------
 
 -  Resources can be migrated only when the source and destination vaults are in the **Available** or **Locked** state.
--  The source and destination vaults for resource migration must be of the same specifications.
+-  The source and destination vaults for resource migration must be of the same types. For example, resources in a server backup vault can be migrated to another server backup vault, but cannot be migrated to another disk backup vault.
 -  The remaining capacity of the destination vault must be greater than the size of resource backups to be migrated.
 -  Cross-account resource migration is currently not supported.
 -  The source and destination vaults must be in the same region.
@@ -30,7 +30,7 @@ Procedure
 #. Click the **Associated Servers** tab. Find the target server and click **Migrate** in the **Operation** column.
 
 
-   .. figure:: /_static/images/en-us_image_0000001628917242.png
+   .. figure:: /_static/images/en-us_image_0000002021313754.png
       :alt: **Figure 1** Migrating a resource
 
       **Figure 1** Migrating a resource
