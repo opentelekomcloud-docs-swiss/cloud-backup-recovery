@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001750532005.html
+:original_name: cbr_06_0095.html
 
-.. _en-us_topic_0000001750532005:
+.. _cbr_06_0095:
 
 Capacity
 ========

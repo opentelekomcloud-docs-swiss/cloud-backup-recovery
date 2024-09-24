@@ -9,7 +9,7 @@ This section describes how to quickly create a cloud disk backup.
 
 Backing up a server does not impact the disk performance.
 
-Peak hours of the backup service are from 00:00 to 06:00, during which backup schedules may be delayed. So you are advised to evaluate your service types and schedule backups outside of the backup peak hours.
+Peak hours of the backup service are from 22:00 to 08:00, during which there may be delays. So you are advised to evaluate your service types and schedule backups in discrete time periods.
 
 Prerequisites
 -------------
@@ -35,7 +35,7 @@ Procedure
 
       **Figure 1** Selecting the disk to be backed up
 
-   |image3|
+      |image3|
 
    -  Click the vault name to go to the vault details page. On the **Associated Disks** tab page, locate the target disk and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0007__fig19972192464112>`.
 
@@ -87,12 +87,12 @@ Procedure
 
    .. note::
 
-      If you delete data from the disk during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
+      -  If you delete data from the disk during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
 
    After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring from a Cloud Disk Backup <cbr_03_0033>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001186588456.png
-.. |image4| image:: /_static/images/en-us_image_0000001583873369.png
+.. |image3| image:: /_static/images/en-us_image_0000002026603282.png
+.. |image4| image:: /_static/images/en-us_image_0000002062643485.png
 .. |image5| image:: /_static/images/en-us_image_0184062862.png

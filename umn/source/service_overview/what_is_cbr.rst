@@ -17,7 +17,9 @@ CBR involves backups, vaults, and policies.
 
 **Backup**
 
-A backup is a copy of a particular chunk of data and is usually stored elsewhere so that it may be used to restore the original data in the event of data loss. There are the following types of backups:
+A backup is a copy of a particular chunk of data and is usually stored elsewhere so that it may be used to restore the original data in the event of data loss.
+
+There are the following types of backups:
 
 -  Cloud disk backup: provides snapshot-based backups for EVS disks.
 -  Cloud server backup: uses the consistency snapshot technology to protect data for ECSs.
@@ -43,15 +45,15 @@ Differences Among the Backup Types
 
 .. table:: **Table 1** Differences among the backup types
 
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | Item            | Cloud Server Backup                            | Cloud Disk Backup                                                                            |
-   +=================+================================================+==============================================================================================+
-   | What to back up | All disks (system and data disks) on a server  | One or more specific disks (system or data disks)                                            |
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | When to use     | You want to back up entire cloud servers.      | You want to back up only data disks.                                                         |
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | Advantages      | All disks on a server are backed up at a time. | Only data of specific disks is backed up, which costs less than backing up an entire server. |
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   | Item            | Cloud Server Backup                                            | Cloud Disk Backup                                                                            |
+   +=================+================================================================+==============================================================================================+
+   | What to back up | All disks (system and data disks) on a server or part of disks | One or more specific disks (system or data disks)                                            |
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   | When to use     | You want to back up entire cloud servers.                      | You want to back up only data disks.                                                         |
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   | Advantages      | All disks on a server are backed up at a time.                 | Only data of specific disks is backed up, which costs less than backing up an entire server. |
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
 
 Backup Mechanism
 ----------------
@@ -90,6 +92,8 @@ CBR supports one-off backup and periodic backup. A one-off backup task is manual
    +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 You can also use the two backup options together if needed. For example, you can associate resources with a vault and apply a backup policy to the vault to execute periodic backup for all the resources in the vault. Additionally, you can perform a one-off backup for the most important resources to enhance data security. :ref:`Figure 2 <cbr_01_0002__fig190314191275>` shows the use of the two backup options.
+
+Theoretically, you can create as many backups for a resource as needed. This number is not limited.
 
 .. _cbr_01_0002__fig190314191275:
 

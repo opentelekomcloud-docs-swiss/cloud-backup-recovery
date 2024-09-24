@@ -5,4 +5,8 @@
 Can a Disk Be Restored Using Its Backups After Its Capacity Is Expanded?
 ========================================================================
 
-Yes. After restoration, the capacity of the expanded disk goes back to the original capacity before expansion. If you want to use the capacity added to the disk, you need to attach the restored disk to a server, log in to the server, and then manually modify the file system configuration. For detailed operations, see sections about post-expansion operations on disks in the *Elastic Volume Service User Guide*.
+Yes. After restoration, the capacity of the expanded disk goes back to the original capacity before expansion.
+
+If you want to use the capacity added to the disk, you need to attach the restored disk to a server, log in to the server, and then manually modify the file system configuration.
+
+For details, see `section "Disk Capacity Expansion" in the Elastic Volume Service User Guide <https://docs-swiss-int.otc-service.com/elastic-volume-service/umn/disk_capacity_expansion/index.html>`__.

@@ -24,11 +24,11 @@ Procedure
 
       b. In the displayed dialog box, enter the key and value of the new tag.
 
-         Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 1 <cbr_03_0010__fig1898914563297>`.
+         Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 1 <cbr_03_0010__fig19773171091318>`.
 
-         .. _cbr_03_0010__fig1898914563297:
+         .. _cbr_03_0010__fig19773171091318:
 
-         .. figure:: /_static/images/en-us_image_0251474017.png
+         .. figure:: /_static/images/en-us_image_0000002021475630.png
             :alt: **Figure 1** Adding a tag
 
             **Figure 1** Adding a tag
