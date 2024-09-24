@@ -1,0 +1,10 @@
+diff a/umn/source/conf.py b/umn/source/conf.py	(rejected hunks)
+@@ -94,7 +92,7 @@ html_theme = 'otcdocs'
+ html_theme_options = {
+     "disable_search": True,
+     "site_name": "Internal Documentation Portal",
+-    "logo_url": "https://docs-int.otc-service.com",
++    "logo_url": "https://docs-swiss-int.otc-service.com",
+ }
+ 
+ # The name for this set of Sphinx documents.  If None, it defaults to

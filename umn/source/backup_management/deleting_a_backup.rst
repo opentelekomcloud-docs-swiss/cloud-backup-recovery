@@ -9,6 +9,10 @@ You can delete unwanted backups to reduce space usage and costs.
 
 CBR supports manual deletion of backups and automatic deletion of expired backups. The latter is executed based on the backup retention rule in the backup policy. For details, see :ref:`Creating a Backup Policy <cbr_03_0025>`.
 
+.. note::
+
+   Backups are not stored on a server. Deleting backups has no impact on the server performance.
+
 Prerequisites
 -------------
 
@@ -38,4 +42,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001232188975.png
+.. |image3| image:: /_static/images/en-us_image_0000002021320606.png

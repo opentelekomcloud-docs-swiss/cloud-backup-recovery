@@ -11,7 +11,7 @@ If you do not need an ECS for the moment, you can back up the ECS and then delet
 
 Backing up a server does not impact the server performance.
 
-Peak hours of the backup service are from 00:00 to 06:00, during which backup schedules may be delayed. So you are advised to evaluate your service types and schedule backups outside of the backup peak hours.
+Peak hours of the backup service are from 22:00 to 08:00, during which there may be delays. So you are advised to evaluate your service types and schedule backups in discrete time periods.
 
 Prerequisites
 -------------
@@ -38,7 +38,7 @@ Procedure
 
       **Figure 1** Selecting the server to be backed up
 
-   |image3|
+      |image3|
 
    -  Click the vault name to go to the vault details page. On the **Associated Servers** tab page, locate the target server and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0006__fig12341420103610>`.
 
@@ -86,12 +86,12 @@ Procedure
 
    .. note::
 
-      A server can be restarted if the backup progress exceeds 10%. However, to ensure data integrity, restart it after the backup is complete.
+      -  A server can be restarted if the backup progress exceeds 10%. However, to ensure data integrity, restart it after the backup is complete.
 
-   After the backup is complete, you can use the backup to restore server data or create an image. For details, see :ref:`Restoring from a Cloud Server Backup <cbr_03_0032>` and :ref:`Using a Backup to Create an Image <cbr_03_0016>`.
+   After the backup is complete, you can use the backup to restore server data or create an image. For details, see :ref:`Restoring from a Cloud Server Backup <cbr_03_0032>` and :ref:`Creating an Image from a Cloud Server Backup <cbr_03_0016>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001231877281.png
-.. |image4| image:: /_static/images/en-us_image_0000001584073405.png
+.. |image3| image:: /_static/images/en-us_image_0000002026445662.png
+.. |image4| image:: /_static/images/en-us_image_0000002062644745.png
 .. |image5| image:: /_static/images/en-us_image_0184043658.png
