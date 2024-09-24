@@ -28,7 +28,7 @@ Procedure
 
       To avoid data inconsistency after restoration, you are advised to back up the entire server.
 
-      If you want to back up only some of the disks to reduce costs, ensure that the data on the backed up disks does not depend on the disks that are not backed up. Or, data inconsistency may occur.
+      If you want to back up only some of the disks to reduce costs, ensure that data on the backed up disks does not depend on the disks that are not backed up. Or, data inconsistency may occur.
 
       For example, the data of an Oracle database is scattered across different disks. If only some of the disks are backed up, restoration restores only the data of the disks that have been backed up, with data on the rest of the disks unchanged. As a result, the data may be inconsistent and the Oracle database may fail to start.
 

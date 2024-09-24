@@ -5,7 +5,7 @@
 Modifying a Policy
 ==================
 
-You can modify a policy to better suit your services.
+You can modify backup policies if needed.
 
 Prerequisites
 -------------
@@ -41,4 +41,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001186791102.png
+.. |image3| image:: /_static/images/en-us_image_0000002028777013.png

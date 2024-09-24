@@ -12,8 +12,8 @@ Prerequisites
 
 At least one backup task has been created.
 
-Viewing Backup Details
-----------------------
+Procedure
+---------
 
 #. Log in to the CBR console.
 
@@ -29,7 +29,7 @@ Viewing Backup Details
 
    |image3|
 
-   -  You can search for backups by selecting a status from the **All statuses** drop-down list in the upper right corner of the backup list. :ref:`Table 1 <cbr_03_0013__table067414221375>` describes the backup statuses.
+   -  You can search for backups by selecting a status from the **All statuses** drop-down list above the backup list. :ref:`Table 1 <cbr_03_0013__table067414221375>` describes the backup statuses.
 
       .. _cbr_03_0013__table067414221375:
 
@@ -61,19 +61,19 @@ Viewing Backup Details
          |                       |                       | A backup in this state cannot be used for restoration, and must be deleted manually. If manual deletion fails, contact technical support.                                                                  |
          +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   -  You can search for backups by clicking **Advanced Search** in the upper right corner of the backup list.
+   -  You can search for backups by clicking **Advanced Search** above the backup list.
 
-      You can search by specifying a backup status, backup name, backup ID, vault ID, server name, server ID, server type, or the creation date. See :ref:`Figure 2 <cbr_03_0013__fig1067432214711>`.
+      You can search by specifying a backup name, backup ID, backup status, vault ID, server name, server ID, or the creation date. See :ref:`Figure 2 <cbr_03_0013__fig1067432214711>`.
 
       .. _cbr_03_0013__fig1067432214711:
 
-      .. figure:: /_static/images/en-us_image_0251476754.png
-         :alt: **Figure 2** Advanced Search
+      **Figure 2** Advanced Search
 
-         **Figure 2** Advanced Search
+      |image4|
 
 #. Click the backup name to view details about the backup.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001186626606.png
+.. |image3| image:: /_static/images/en-us_image_0000001992338654.png
+.. |image4| image:: /_static/images/en-us_image_0000001995858070.png

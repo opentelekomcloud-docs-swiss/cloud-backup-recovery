@@ -32,4 +32,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001232187529.png
+.. |image3| image:: /_static/images/en-us_image_0000002021314946.png

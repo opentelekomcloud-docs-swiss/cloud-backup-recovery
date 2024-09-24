@@ -2,12 +2,12 @@
 
 .. _cbr_03_0017:
 
-Using a Backup to Create a Disk
-===============================
+Creating a Disk from a Cloud Disk Backup
+========================================
 
-You can create new disks from backups. Once created, the new disks will contain the backup data.
+You can use a disk backup to create a disk that contains the same data as the backup.
 
-The new disks created using system disk backups can only be used as data disks on servers. They cannot be used as system disks.
+Disks created using system disk backups can only be used as data disks on servers. They cannot be used as system disks.
 
 Procedure
 ---------

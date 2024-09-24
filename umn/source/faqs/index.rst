@@ -7,7 +7,7 @@ FAQs
 
 -  :ref:`Concepts <cbr_06_0002>`
 -  :ref:`Backup <cbr_06_0006>`
--  :ref:`Capacity <en-us_topic_0000001750532005>`
+-  :ref:`Capacity <cbr_06_0095>`
 -  :ref:`Restoration <cbr_06_0012>`
 -  :ref:`Policies <cbr_06_0042>`
 -  :ref:`Others <cbr_06_0019>`

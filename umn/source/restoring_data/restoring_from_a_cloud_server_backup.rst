@@ -7,8 +7,12 @@ Restoring from a Cloud Server Backup
 
 When disks on a server are faulty or their data is lost, you can use a backup to restore the server to its state when the backup was created.
 
-Constraints
------------
+.. note::
+
+   The system shuts down the server before restoring server data, and automatically starts up the server after the restoration is complete. If you deselect **Start the server immediately after restoration**, you need to manually start the server after the restoration is complete.
+
+Notes and Constraints
+---------------------
 
 -  When restoring from a cloud server backup, backup of a data disk cannot be restored to the system disk.
 -  Data cannot be restored to servers in the **Faulty** state.
@@ -30,7 +34,7 @@ Procedure
 
 #. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
-#. In the row of the backup, click **Restore Server**. See :ref:`Figure 1 <cbr_03_0032__fig533382242914>`.
+#. Click **Restore Server** in the **Operation** column, as shown in :ref:`Figure 1 <cbr_03_0032__fig533382242914>`.
 
    .. important::
 
@@ -78,4 +82,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001232077795.png
+.. |image3| image:: /_static/images/en-us_image_0000002062648677.png
