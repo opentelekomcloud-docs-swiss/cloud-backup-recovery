@@ -7,6 +7,7 @@ Cloud Backup and Recovery (CBR) allows you to back up cloud disks, elastic cloud
    :class: container-sbv
 
    .. service_card::
+      :environment: internal
       :service_type: cbr
       :umn: This document describes basic concepts, functions, key terms, and FAQs of the Cloud Backup and Recovery (CBR) service and provides instructions for quickly creating backups and restoring data using the backups.
       :api-ref: This document describes application programming interfaces (APIs) of Cloud Backup and Recovery (CBR) and provides API parameter description and example values.
