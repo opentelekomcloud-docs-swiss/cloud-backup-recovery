@@ -5,6 +5,9 @@
 Viewing a Backup
 ================
 
+Scenario
+--------
+
 In the backup list, you can set search criteria to filter backups and view their details. The results contain backup tasks that are running or have completed.
 
 Prerequisites

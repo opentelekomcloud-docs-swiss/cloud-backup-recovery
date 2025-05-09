@@ -5,4 +5,8 @@
 How Many Backups Can I Create for a Resource?
 =============================================
 
-You can create as many backups for a resource as needed.
+This number is not limited.
+
+Theoretically, you can create as many backups for a resource as needed.
+
+By default, full backup at the first time and incremental backup subsequently.

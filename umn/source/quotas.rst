@@ -45,4 +45,4 @@ Before contacting the operations administrator, make sure that the following inf
    -  Required quota
 
 .. |image1| image:: /_static/images/en-us_image_0275513364.png
-.. |image2| image:: /_static/images/en-us_image_0152727234.png
+.. |image2| image:: /_static/images/en-us_image_0000002189833272.png

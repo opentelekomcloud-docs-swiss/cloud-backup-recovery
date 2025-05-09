@@ -6,3 +6,7 @@ What Can I Do if the Password Becomes a Random One After I Use a Backup to Resto
 ===============================================================================================================================
 
 For details about how to reset the password, see section "Passwords" in the *Elastic Cloud Server User Guide*.
+
+If you have installed the password reset plug-in, you can reset the password on the management console.
+
+You can reset the password online or offline.

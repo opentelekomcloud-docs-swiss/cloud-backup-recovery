@@ -45,22 +45,22 @@ Differences Among the Backup Types
 
 .. table:: **Table 1** Differences among the backup types
 
-   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | Item            | Cloud Server Backup                                            | Cloud Disk Backup                                                                            |
-   +=================+================================================================+==============================================================================================+
-   | What to back up | All disks (system and data disks) on a server or part of disks | One or more specific disks (system or data disks)                                            |
-   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | When to use     | You want to back up entire cloud servers.                      | You want to back up only data disks.                                                         |
-   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | Advantages      | All disks on a server are backed up at a time.                 | Only data of specific disks is backed up, which costs less than backing up an entire server. |
-   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   | Item            | Cloud Server Backup                                                              | Cloud Disk Backup                                                                            |
+   +=================+==================================================================================+==============================================================================================+
+   | What to back up | All disks (system and data disks) on a server or part of disks                   | One or more specific disks (system or data disks)                                            |
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   | When to use     | You want to back up entire cloud servers.                                        | You want to back up only data disks.                                                         |
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   | Advantages      | All disks on a server are backed up at the same time to ensure data consistency. | Only data of specific disks is backed up, which costs less than backing up an entire server. |
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
 
 Backup Mechanism
 ----------------
 
 CBR in-cloud backup offers block-level backup. The first backup is a full backup and backs up all used data blocks. For example, if a disk size is 100 GB and 40 GB has been used, only the 40 GB of data is backed up. An incremental backup backs up only the data changed since the last backup to save the storage space and backup time.
 
-When a backup is deleted, data blocks will not be deleted if they are depended on by other backups, ensuring that other backups can still be used for restoration. Both a full backup and an incremental backup can be used to restore data to a given backup point in time.
+When a backup is deleted, data blocks that are referenced by other backups will not be deleted, ensuring that other backups can still be used for restoration. Both a full backup and an incremental backup can be used to restore data to a given backup point in time.
 
 When creating a backup of a disk, CBR also creates a snapshot for it. CBR keeps only the latest snapshot. Every time it creates a new snapshot during backup, it deletes the old snapshot.
 
@@ -86,7 +86,7 @@ CBR supports one-off backup and periodic backup. A one-off backup task is manual
    +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
    | Backup name            | User-defined backup name, which is **manualbk\_**\ *xxxx* by default                                                                                       | System-assigned backup name, which is **autobk\_**\ *xxxx* by default                                                         |
    +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Backup mode            | The first backup is a full backup and the consecutive backups are incremental.                                                                             | The first backup is a full backup and the consecutive backups are incremental.                                                |
+   | Backup mode            | The first backup is a full backup and the subsequent backups are incremental.                                                                              | The first backup is a full backup and the subsequent backups are incremental.                                                 |
    +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
    | Application scenario   | Executed before patching or upgrading the OS or upgrading an application. A one-off backup can be used for restoration if the patching or upgrading fails. | Executed for routine maintenance. The latest backup can be used for restoration if an unexpected failure or data loss occurs. |
    +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+

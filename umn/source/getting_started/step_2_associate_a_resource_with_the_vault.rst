@@ -50,7 +50,7 @@ Procedure
 
    .. note::
 
-      If a new disk is attached to an associated server, CBR automatically identifies the new disk and includes the new disk in subsequent backup tasks.
+      After a new disk is added to the associated server, the system automatically identifies the new disk and backs up the new disk.
 
 Automatic Association
 ---------------------
@@ -88,7 +88,7 @@ If you enable automatic association for a backup vault, the vault will automatic
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0252972053.png
+.. |image3| image:: /_static/images/en-us_image_0000002021335016.png
 .. |image4| image:: /_static/images/en-us_image_0166222311.png
 .. |image5| image:: /_static/images/en-us_image_0000001116431701.png
 .. |image6| image:: /_static/images/en-us_image_0000001116214783.png

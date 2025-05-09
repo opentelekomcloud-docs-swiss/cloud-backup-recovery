@@ -2,8 +2,8 @@
 
 .. _cbr_03_0002:
 
-Querying a Vault
-================
+Viewing a Vault
+===============
 
 You can set search criteria for querying desired vaults in the vault list.
 
@@ -39,6 +39,11 @@ Viewing Vault Details
       | Type                              | Vault type                                                                                                                                                                                                                                                       |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Status                            | Vault status. :ref:`Table 2 <cbr_03_0002__table18768121721316>` describes the vault statuses.                                                                                                                                                                    |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Backup Locking                    | Whether backup locking is enabled for the vault.                                                                                                                                                                                                                 |
+      |                                   |                                                                                                                                                                                                                                                                  |
+      |                                   | -  Enabled: If backup locking is enabled, it cannot be disabled.                                                                                                                                                                                                 |
+      |                                   | -  Disabled: Backup locking is disabled for the vault.                                                                                                                                                                                                           |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Specifications                    | Vault specifications                                                                                                                                                                                                                                             |
       |                                   |                                                                                                                                                                                                                                                                  |
@@ -89,12 +94,6 @@ Viewing Vault Details
 
    -  Search a vault by its name or ID.
 
-   -  Click **Search by Tag** in the upper right corner to search for vaults by tag.
-
-      -  On the displayed **Search by Tag** page, enter an existing tag key and value and click |image5|. The added tag search criteria are displayed under the text boxes. Click **Search** in the lower right corner.
-      -  You can add a maximum of 20 tags by clicking |image6|. They will be applied together for a combination search.
-      -  You can click **Reset** in the lower right corner to reset the search criteria.
-
 #. Click the name of a specific vault to view vault details.
 
    .. note::
@@ -105,5 +104,3 @@ Viewing Vault Details
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
 .. |image3| image:: /_static/images/en-us_image_0000001995695954.png
 .. |image4| image:: /_static/images/en-us_image_0000002032295753.png
-.. |image5| image:: /_static/images/en-us_image_0160751578.png
-.. |image6| image:: /_static/images/en-us_image_0160751578.png
