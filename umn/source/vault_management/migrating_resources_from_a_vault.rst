@@ -11,10 +11,11 @@ Notes and Constraints
 ---------------------
 
 -  Resources can be migrated only when the source and destination vaults are in the **Available** or **Locked** state.
--  The source and destination vaults for resource migration must be of the same types. For example, resources in a server backup vault can be migrated to another server backup vault, but cannot be migrated to another disk backup vault.
+-  Resources can be migrated only when no task is being executed in the source and destination vaults.
 -  The remaining capacity of the destination vault must be greater than the size of resource backups to be migrated.
 -  Cross-account resource migration is currently not supported.
 -  The source and destination vaults must be in the same region.
+-  The source and destination vaults for resource migration must be of the same types. For example, resources in a server backup vault can be migrated to another server backup vault, but cannot be migrated to another disk backup vault.
 
 Procedure
 ---------

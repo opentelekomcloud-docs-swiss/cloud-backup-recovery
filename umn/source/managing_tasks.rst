@@ -12,8 +12,8 @@ Prerequisites
 
 At least one task exists.
 
-Procedure
----------
+Procedure for Viewing the Task Execution Status
+-----------------------------------------------
 
 #. Log in to the CBR console.
 

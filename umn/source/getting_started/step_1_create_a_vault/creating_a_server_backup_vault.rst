@@ -22,6 +22,16 @@ Procedure
 
    -  **Backup**: A server backup vault stores server backups.
 
+#. Determine whether to enable backup locking.
+
+   If enabled, backups in the vault will not be deleted maliciously or by mistake, improving data reliability.
+
+   |image3|
+
+   .. important::
+
+      Backup locking cannot be disabled after it is enabled.
+
 #. (Optional) In the server list, select the servers or disks you want to back up. After the servers or disks are selected, they are added to the list of selected servers. See :ref:`Figure 1 <cbr_02_0003__fig204531717131710>`. You can also select specific disks on a server and associate them with the vault.
 
    .. important::
@@ -36,7 +46,7 @@ Procedure
 
    **Figure 1** Selecting servers
 
-   |image3|
+   |image4|
 
    .. note::
 
@@ -51,7 +61,7 @@ Procedure
 
    **Figure 2** Setting the vault capacity
 
-   |image4|
+   |image5|
 
 #. Configure auto backup. See :ref:`Figure 3 <cbr_02_0003__fig4582143195315>`.
 
@@ -62,7 +72,7 @@ Procedure
 
    **Figure 3** Configuring auto backup
 
-   |image5|
+   |image6|
 
 #. (Optional) Configure automatic resource association.
 
@@ -111,10 +121,11 @@ Procedure
 
 #. Go back to the **Cloud Server Backups** page. You can see the created vault in the vault list.
 
-   You can associate servers with the vault and perform backup for the servers. For details, see :ref:`Querying a Vault <cbr_03_0002>`.
+   You can associate servers with the vault and perform backup for the servers. For details, see :ref:`Viewing a Vault <cbr_03_0002>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001231753127.png
-.. |image4| image:: /_static/images/en-us_image_0000001231754033.png
-.. |image5| image:: /_static/images/en-us_image_0000001186394912.png
+.. |image3| image:: /_static/images/en-us_image_0000002118794904.png
+.. |image4| image:: /_static/images/en-us_image_0000002021489830.png
+.. |image5| image:: /_static/images/en-us_image_0000001231754033.png
+.. |image6| image:: /_static/images/en-us_image_0000001186394912.png

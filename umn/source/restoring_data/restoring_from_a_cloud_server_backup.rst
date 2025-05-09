@@ -11,8 +11,8 @@ When disks on a server are faulty or their data is lost, you can use a backup to
 
    The system shuts down the server before restoring server data, and automatically starts up the server after the restoration is complete. If you deselect **Start the server immediately after restoration**, you need to manually start the server after the restoration is complete.
 
-Notes and Constraints
----------------------
+Constraints
+-----------
 
 -  When restoring from a cloud server backup, backup of a data disk cannot be restored to the system disk.
 -  Data cannot be restored to servers in the **Faulty** state.
@@ -66,11 +66,11 @@ Procedure
 
       If the number of disks to be restored is greater than the number of disks that were backed up, restoration may cause data inconsistency.
 
-      For example, if the Oracle data is scattered across multiple disks and only some of them are restored, data inconsistency may occur and the application may fail to start.
+      For example, if the Oracle data is scattered across multiple disks and only some of them are restored, data may become inconsistent and the application may fail to start.
 
 #. Click **Yes** and confirm that the restoration is successful.
 
-   You can view the restoration status in the backup list. When the backup enters the **Available** state and no new restoration tasks failed, the restoration is successful. The resource is restored to the state when that backup was created.
+   You can view the restoration status in the backup list. When the backup enters the **Available** state and no new restoration tasks failed, the restoration is successful. The data is restored to the state when that backup was created.
 
    For details about how to view failed restoration tasks, see :ref:`Managing Tasks <cbr_03_0035>`.
 

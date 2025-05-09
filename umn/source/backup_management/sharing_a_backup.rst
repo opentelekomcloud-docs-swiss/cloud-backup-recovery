@@ -25,8 +25,8 @@ Context
 -  A recipient can choose to accept or reject a backup. After accepting a backup, the recipient can use the backup to create new servers or disks.
 -  When a sharer deletes a shared backup, the backup will also be deleted from the recipient's account, but the disks or servers previously created using the backup will be retained.
 
-Procedure for the Sharer
-------------------------
+Procedure
+---------
 
 #. Log in to the CBR console.
 
@@ -61,8 +61,9 @@ Procedure for the Sharer
 
    a. Click the **Cancel Sharing** tab, select the projects you want to cancel sharing, and click **OK**.
 
-Procedure for the Recipient
----------------------------
+
+Procedure
+---------
 
 #. Log in to the CBR console.
 
