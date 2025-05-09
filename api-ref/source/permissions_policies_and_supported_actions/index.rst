@@ -6,11 +6,11 @@ Permissions Policies and Supported Actions
 ==========================================
 
 -  :ref:`Introduction <cbr_04_0017>`
--  :ref:`Category of CBR Actions <cbr_04_0018>`
+-  :ref:`CBR Actions <cbr_04_0018>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
    introduction
-   category_of_cbr_actions
+   cbr_actions
