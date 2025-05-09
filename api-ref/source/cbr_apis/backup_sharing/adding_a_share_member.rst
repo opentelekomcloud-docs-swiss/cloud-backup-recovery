@@ -8,7 +8,7 @@ Adding a Share Member
 Function
 --------
 
-This API is used to add a member with whom the backup can be shared. Only cloud server backups can be shared among tenants in the same region.
+This interface is used to add members who can share a backup. Only ECS and VBS backups can be shared. Backups can be shared among different projects or users.
 
 URI
 ---
@@ -29,21 +29,29 @@ Request Parameters
 
 .. table:: **Table 2** Request header parameters
 
-   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter    | Mandatory | Type   | Description                                                                                                                                                         |
-   +==============+===========+========+=====================================================================================================================================================================+
-   | X-Auth-Token | Yes       | String | User token The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
-   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                              |
+   +=================+=================+=================+==========================================================================================================================================================+
+   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                          |
+   |                 |                 |                 | The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 3** Request body parameters
 
-   +-----------------+-----------------+------------------+-----------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                         |
-   +=================+=================+==================+=====================================================+
-   | members         | Yes             | Array of strings | Project IDs of the backup share members to be added |
-   |                 |                 |                  |                                                     |
-   |                 |                 |                  | Array Length: **1 - 10**                            |
-   +-----------------+-----------------+------------------+-----------------------------------------------------+
+   +-----------------+-----------------+------------------+----------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type             | Description                                                                                  |
+   +=================+=================+==================+==============================================================================================+
+   | members         | No              | Array of strings | Project IDs of the backup share members to be added                                          |
+   |                 |                 |                  |                                                                                              |
+   |                 |                 |                  | Array Length: **1 - 10**                                                                     |
+   +-----------------+-----------------+------------------+----------------------------------------------------------------------------------------------+
+   | domains         | No              | Array of strings | Domain IDs of the backup share members to be added.                                          |
+   |                 |                 |                  |                                                                                              |
+   |                 |                 |                  | .. note::                                                                                    |
+   |                 |                 |                  |                                                                                              |
+   |                 |                 |                  |    This feature is in the open beta test (OBT) phase and may be unavailable in some regions. |
+   +-----------------+-----------------+------------------+----------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
