@@ -18,7 +18,7 @@ Constraints
 -  A backup policy must be enabled before it can be used for periodic backups.
 -  A maximum of 32 backup policies can be created in each account.
 -  When expired backups are deleted, automatic backups will be deleted, but manual backups will not.
--  Only servers in the **Running** or **Stopping** state and disks in the **Available** or **In-use** state can be backed up.
+-  Only servers in the **Running** or **Stopped** state and disks in the **Available** or **In-use** state can be backed up.
 -  CBR by default performs a full backup for a resource in the initial backup and incremental backups in subsequent backups.
 -  The minimum interval between two full backups is one day.
 

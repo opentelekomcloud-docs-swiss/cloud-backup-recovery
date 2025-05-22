@@ -22,7 +22,7 @@ Procedure
 
    -  **Backup**: A server backup vault stores server backups.
 
-#. Determine whether to enable backup locking.
+#. Determine whether to enable backup locking .
 
    If enabled, backups in the vault will not be deleted maliciously or by mistake, improving data reliability.
 
