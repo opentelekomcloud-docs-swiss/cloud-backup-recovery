@@ -16,8 +16,14 @@ Context
 **Sharer**
 
 -  Backups can only be shared among domains in the same region. They cannot be shared across regions.
--  Encrypted backups cannot be shared. Backups cannot be shared across regions. Account to which a backup is shared must be in the same region as the backup.
+-  Backups cannot be shared across regions. Account to which a backup is shared must be in the same region as the backup.
 -  When a sharer deletes a shared backup, the backup will also be deleted from the recipient's account, but the disks or servers previously created using the backup will be retained.
+-  When an encrypted backup is shared, the encryption key must be shared with the recipient so that the recipient can use the shared backup.
+
+   .. important::
+
+      -  For details about how to share a key, see `Creating a Grant <https://docs.sc.otc.t-systems.com/key-management-service/umn/key_management_service/managing_a_grant/creating_a_grant.html>`__. To obtain the recipient **Account ID**, hover over the username and choose **My Credentials** > to check the **Account ID**.
+      -  Cloud disk backup encryption depends on an agency created that grants KMS access permissions to EVS. If the disk to be backed up is encrypted, the disk backup generated will be an encrypted backup. The encryption attribute of backups cannot be changed.
 
 **Recipient**
 
@@ -57,9 +63,13 @@ Procedure
 
    d. Click **OK**.
 
+      Return to the backup list, click the backup name to go to the backup details page, and click the **Share List** tab to view the shared backup.
+
    -  Canceling sharing
 
-   a. Click the **Cancel Sharing** tab, select the projects you want to cancel sharing, and click **OK**.
+      Click the **Cancel Sharing** tab, select the projects you want to cancel sharing, and click **OK**.
+
+      Return to the backup list, click the backup name to go to the backup details page, and click the **Share List** tab to view the unshared backups.
 
 
 Procedure

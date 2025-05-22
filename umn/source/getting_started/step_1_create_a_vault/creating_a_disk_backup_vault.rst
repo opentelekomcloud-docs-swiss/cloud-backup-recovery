@@ -18,7 +18,7 @@ Procedure
 
 #. In the upper right corner of the page, click **Create Disk Backup Vault**.
 
-#. Determine whether to enable backup locking.
+#. Determine whether to enable backup locking .
 
    If backup locking is enabled, backups in the vault will not be deleted maliciously or by mistake. This improves data reliability.
 
@@ -41,9 +41,8 @@ Procedure
       -  The selected disks must have not been associated with any vault and must be in the **Available** or **In-use** state.
       -  You can also associate disks with the vault you are creating later if you skip this step.
 
-#. Specify a vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least the same as the size of the disks you want to back up. See :ref:`Figure 2 <cbr_02_0004__fig179361847142520>`.
+#. Specify a vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least the same as the size of the disks you want to back up.
 
-   .. _cbr_02_0004__fig179361847142520:
 
    **Figure 2** Setting the vault capacity
 
