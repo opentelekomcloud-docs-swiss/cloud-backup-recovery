@@ -41,8 +41,11 @@ Procedure
       -  The selected disks must have not been associated with any vault and must be in the **Available** or **In-use** state.
       -  You can also associate disks with the vault you are creating later if you skip this step.
 
-#. Specify a vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least the same as the size of the disks you want to back up.
+#. Specify the vault capacity. This capacity is the total space that is required by the disks you want to associate with this vault. Plan the vault capacity and ensure that it is at least the same as the size of the disks you want to back up. If automatic association is enabled and a backup policy is applied to the vault, plan more capacity as required. The capacity ranges from 10 GB to 10485760 GB. If automatic capacity expansion is not enabled, the vault capacity will not be automatically expanded, even if the capacity of disks is expanded during use.
 
+   You can expand the vault capacity if it becomes insufficient. See :ref:`Figure 2 <cbr_02_0004__fig179361847142520>`.
+
+   .. _cbr_02_0004__fig179361847142520:
 
    **Figure 2** Setting the vault capacity
 
@@ -50,7 +53,7 @@ Procedure
 
 #. Configure auto backup. See :ref:`Figure 3 <cbr_02_0004__fig4582143195315>`.
 
-   -  If you select **Configure**, you must then select an existing backup policy or create a new policy. After the vault is created, CBR will apply the policy to this vault, and all disks associated with this vault will be automatically backed up based on this policy.
+   -  If you select **Configure**, you must then select an existing backup policy or create a policy. After the vault is created, CBR will apply the policy to this vault, and all disks associated with this vault will be automatically backed up based on this policy.
    -  If you select **Skip**, disks associated with this vault will not be automatically backed up until you apply a backup policy to the vault.
 
    .. _cbr_02_0004__fig4582143195315:
