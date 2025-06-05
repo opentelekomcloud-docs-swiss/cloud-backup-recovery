@@ -53,7 +53,7 @@ Procedure
       -  The selected servers must have not been associated with any vault and must be in the **Running** or **Stopped** state.
       -  You can also associate servers with the vault you are creating later if you skip this step.
 
-#. Specify a vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least the same as the size of the servers you want to back up. Also, if automatic association is enabled and a backup policy is applied to the vault, more capacity is required.
+#. Specify a vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least the same as the size of the servers you want to back up. Also, if automatic association is enabled and a backup policy is applied to the vault, more capacity is required. If auto capacity expansion is not enabled, the vault capacity will not be automatically expanded, even if new disks are later added to associated servers or disk capacities are expanded during use.
 
    As the vault's used space grows, you can expand the vault capacity if it becomes insufficient. See :ref:`Figure 2 <cbr_02_0003__fig179361847142520>`.
 
