@@ -8,7 +8,20 @@ Change History
 +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 | Released On                       | Description                                                                                                                          |
 +===================================+======================================================================================================================================+
-| 2025-06-27                        | This issue the eleventh official release.                                                                                            |
+| 2026-07-20                        | This issue is the thirteenth official release.                                                                                       |
+|                                   |                                                                                                                                      |
+|                                   | Updated the following content:                                                                                                       |
+|                                   |                                                                                                                                      |
+|                                   | -  Updated some console screenshots.                                                                                                 |
+|                                   | -  Modified the descriptions of some procedures.                                                                                     |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| 2026-06-22                        | This issue is the twelfth official release.                                                                                          |
+|                                   |                                                                                                                                      |
+|                                   | Updated the following content:                                                                                                       |
+|                                   |                                                                                                                                      |
+|                                   | Modified the descriptions of some procedures.                                                                                        |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| 2025-06-27                        | This issue is the eleventh official release.                                                                                         |
 |                                   |                                                                                                                                      |
 |                                   | Updated the following content:                                                                                                       |
 |                                   |                                                                                                                                      |
@@ -62,7 +75,7 @@ Change History
 |                                   |                                                                                                                                      |
 |                                   | Updated the following content:                                                                                                       |
 |                                   |                                                                                                                                      |
-|                                   | Deleted the BMS backup from in section "Functions."                                                                                  |
+|                                   | Deleted BMS backup descriptions in section "Functions."                                                                              |
 +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 | 2021-12-10                        | This issue is the second official release.                                                                                           |
 |                                   |                                                                                                                                      |

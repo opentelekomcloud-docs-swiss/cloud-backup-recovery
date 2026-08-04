@@ -7,7 +7,7 @@ What Changes Will Be Made to the Original Backup When I Use the Backup to Restor
 
 -  For Linux:
 
-   -  Check whether drivers related to the PV driver exist. If yes, delete them.
+   -  Check whether any drivers related to the PV driver are present. If so, delete them.
    -  Modify the **grub** and **syslinux** configuration files to add the OS kernel boot parameters and change the disk partition name to **UUID=**\ *UUID of the disk partition*.
    -  Change the names of the disk partitions in the **/etc/fstab** file to **UUID=**\ *UUID of the disk partition*.
    -  Delete services of VMware tools.

@@ -7,11 +7,11 @@ Creating a Cloud Server Backup
 
 This section describes how to quickly create a cloud server backup.
 
-If you do not need an ECS for the moment, you can back up the ECS and then delete it. When you want an ECS later, you can create an image from the ECS backup and use the image to create ECSs.
+If you do not need an ECS for the moment, you can back up the ECS and then delete it. When you want the ECS later, you can create an image from the ECS backup and use the image to create the ECS.
 
 Backing up a server does not impact the server performance.
 
-Peak hours of the backup service are from 22:00 to 08:00, during which there may be delays. So you are advised to evaluate your service types and schedule backups in discrete time periods.
+The backup service experiences peak usage from 22:00 to 08:00, during which delays may occur. To ensure optimal performance, it is recommended that you evaluate your service types and stagger backups across discrete time periods.
 
 Prerequisites
 -------------
@@ -24,33 +24,28 @@ Procedure
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. On the **Cloud Server Backups** page, click the **Vaults** tab and find the vault to which the server is associated.
+#. On the **Cloud Server Backups** page, click the **Vaults** tab and find the vault with which the server is associated.
 
 #. Perform backup in either of the following ways:
 
-   -  Choose **More** > **Perform Backup** in the **Operation** column. In the server list, select the server you want to back up. After a server is selected, it is added to the list of selected servers. See :ref:`Figure 1 <cbr_02_0006__fig2557455115213>`.
+   -  Click **Perform Backup** in the **Operation** column. In the server list, select the server you want to back up. After a server is selected, it is added to the list of selected servers.
 
-      .. _cbr_02_0006__fig2557455115213:
 
       **Figure 1** Selecting the server to be backed up
 
       |image3|
 
-   -  Click the vault name to go to the vault details page. On the **Associated Servers** tab page, locate the target server and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0006__fig12341420103610>`.
+   -  Click the vault name to go to the vault details page. On the **Associated Servers** tab, locate the target server and click **Perform Backup** in the **Operation** column.
 
-      .. _cbr_02_0006__fig12341420103610:
 
       **Figure 2** Perform Backup
 
       |image4|
 
-#. Set **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0006__table4829135361311>` describes the parameters.
-
-   .. _cbr_02_0006__table4829135361311:
+#. Set **Name** and **Description** for the backup.
 
    .. table:: **Table 1** Parameter description
 
@@ -59,7 +54,7 @@ Procedure
       +=======================+=============================================================================================================================================================+=======================+
       | Name                  | Name of the backup you are creating.                                                                                                                        | manualbk_d819         |
       |                       |                                                                                                                                                             |                       |
-      |                       | A name must contain 1 to 64 characters including digits, letters, underscores (_), or hyphens (-).                                                          |                       |
+      |                       | The name can contain 1 to 64 characters. Only letters, digits, underscores (_), and hyphens (-) are allowed.                                                |                       |
       |                       |                                                                                                                                                             |                       |
       |                       | .. note::                                                                                                                                                   |                       |
       |                       |                                                                                                                                                             |                       |
@@ -72,9 +67,8 @@ Procedure
       |                       | It cannot exceed 255 characters.                                                                                                                            |                       |
       +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-#. Choose whether to enable full backup. If full backup is enabled, CBR performs a full backup on every associated server, which requires a larger capacity compared to an incremental backup. See :ref:`Figure 3 <cbr_02_0006__fig789511544815>`.
+#. Choose whether to enable full backup. If full backup is enabled, CBR performs a full backup on every associated server. A full backup requires a larger capacity than an incremental backup.
 
-   .. _cbr_02_0006__fig789511544815:
 
    **Figure 3** Full Backup
 
@@ -82,7 +76,7 @@ Procedure
 
 #. Click **OK**. CBR automatically creates a backup for the server.
 
-   On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
+   On the **Backups** tab, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 

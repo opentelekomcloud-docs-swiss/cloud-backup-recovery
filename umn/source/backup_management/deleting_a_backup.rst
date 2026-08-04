@@ -12,35 +12,35 @@ CBR supports manual deletion of backups and automatic deletion of expired backup
 .. note::
 
    -  Backups are not stored on a server. Deleting backups has no impact on the server performance.
-   -  If a backup has been created and the next backup task is in progress, CBR will not allow you to delete the most recent backup created. You can delete the backup only after the backup task is complete.
+   -  If a backup already exists while the next incremental backup task is in progress, any attempt to delete the existing backup will be blocked. You must wait until the incremental backup finishes before performing the deletion.
    -  CBR automatically creates snapshots during backup and retains the latest snapshot for each disk. If a disk already has a backup, after another backup, the old snapshot will be deleted and the latest one will be retained.
 
 Prerequisites
 -------------
 
 -  There is at least one backup.
--  The backup to be deleted is in the **Available** or **Error** state.
+-  The backups to be deleted are in the **Available** or **Error** state.
 
 Procedure
 ---------
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Click the **Backups** tab and locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
+#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
-#. Choose **More** > **Delete** from the **Operation** column. See :ref:`Figure 1 <cbr_03_0015__fig1233612574363>`. Alternatively, select the backups you want to delete in a batch and click **Delete** in the upper left corner to delete them.
+#. Choose **More** > **Delete** from the **Operation** column. Alternatively, select the backups you want to delete in a batch and click **Delete** in the upper left corner to delete them.
 
-   .. _cbr_03_0015__fig1233612574363:
 
    **Figure 1** Deleting a backup
 
    |image3|
 
-#. Click **Yes**.
+#. In the displayed dialog box, confirm the information, enter **DELETE**, and click **OK**.
+
+   Return to the backup list. If the target backup no longer appears, it was deleted successfully.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

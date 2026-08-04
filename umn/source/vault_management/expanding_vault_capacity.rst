@@ -12,23 +12,21 @@ Procedure
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Find the target vault and choose **More** > **Expand Capacity** in the **Operation** column. See :ref:`Figure 1 <cbr_03_0006__fig624235516355>`.
+#. Locate the target vault and choose **More** > **Expand Capacity** in the **Operation** column.
 
-   .. _cbr_03_0006__fig624235516355:
 
    **Figure 1** Expanding vault capacity
 
    |image3|
 
-#. Enter the capacity to be added. The minimum value is **1**.
+#. Enter the capacity to be added. The minimum value is **1** GB.
 
 #. Click **Next**. Confirm the settings and click **Submit**.
 
-#. Return to the vault list and check that the capacity of the vault has been expanded.
+#. Go back to the vault list. If the vault capacity in the Vault Capacity (GB) column is greater than the original capacity, the vault capacity has been expanded.
 
 Auto Capacity Expansion
 -----------------------
@@ -39,13 +37,15 @@ If this function is enabled, the vault capacity will be automatically expanded t
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image4| in the upper left corner and select a region.
-   c. Click |image5| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image4| and select a region.
+   b. Click |image5| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Find the target vault and click its name.
+#. Locate the target vault and click its name.
 
-#. On the vault details page, enable **Auto Capacity Expansion**.
+#. On the vault details page, enable **Auto Capacity Expansion**. By default, this feature is disabled. It becomes unavailable when the vault's used capacity reaches or exceeds 100% of the total capacity.
+
+   -  Enabled: When the vault's used capacity reaches or exceeds the limit, the vault automatically expands to 1.25 times its current capacity.
+   -  Disabled: The vault does expand automatically.
 
    |image6|
 

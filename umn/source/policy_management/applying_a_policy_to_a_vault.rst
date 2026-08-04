@@ -5,33 +5,34 @@
 Applying a Policy to a Vault
 ============================
 
-You can apply a backup policy to a vault to execute backup tasks at specified times or intervals.
+Scenarios
+---------
+
+You can apply a backup policy to a vault to run backup tasks at specified times or intervals. The generated backups can then be used to restore data quickly if data becomes corrupted or lost.
 
 Constraints
 -----------
 
-You can create multiple policies, but a can apply only one backup policy to a vault.
+-  You can create multiple policies, but you can only apply one backup policy to a vault.
 
 Procedure
 ---------
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Find the target vault and choose **More** > **Apply Backup Policy**. See :ref:`Figure 1 <cbr_03_0029__fig717561410338>`.
+#. Locate the target vault and choose **More** > **Apply Backup Policy**.
 
-   .. _cbr_03_0029__fig717561410338:
 
-   **Figure 1** Setting a backup policy
+   **Figure 1** Applying a backup policy
 
    |image3|
 
 #. Select an existing backup policy from the drop-down list or create a new one. For how to create a policy, see :ref:`Creating a Backup Policy <cbr_03_0025>`.
 
-#. After the policy is successfully applied, view details in the **Policies** area of the vault details page.
+#. After the policy is successfully applied, view details in the **Policies** area on the vault details page.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

@@ -5,7 +5,7 @@
 Can I Use a System Disk Backup to Recover an ECS?
 =================================================
 
-Yes. Before the recovery, you need to detach the system disk to be recovered from the ECS.
+Yes. Before the recovery, you need to detach the system disk from the ECS.
 
 You can also use a system disk backup to create an EVS disk.
 

@@ -9,4 +9,4 @@ No. An ongoing restoration task cannot be stopped.
 
 The backup data will overwrite the current data, and the restoration cannot be undone.
 
-For more information, see :ref:`Restoring Data <cbr_03_0031>`.
+For more information, see :ref:`Data Restoration <cbr_03_0031>`.
