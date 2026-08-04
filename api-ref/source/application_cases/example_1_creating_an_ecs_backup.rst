@@ -15,10 +15,10 @@ Involved APIs
 
 To create a cloud server backup, you need to create a vault for storing backups, associate the target server with the vault, and then back up the server. The following APIs are required:
 
--  Creating a Vault: Create a container for storing backups.
+-  Creating a Vault: Create a vault for storing backups.
 -  Associating Resources: Determine the cloud server or disk to be backed up.
 -  Creating a Restore Point: Create a backup.
--  Querying a Restore Point: Confirm that a backup has been created.
+-  Querying a Restore Point: Confirm that the backup has been created.
 
 Procedure
 ---------
@@ -134,9 +134,9 @@ Procedure
 
    b. In the request body, select the ID of an ECS that is in the **Running** state and has not been associated with a vault.
 
-#. Create a restore point.
+#. Create a checkpoint.
 
-   a. Create a restore point.
+   a. Create a checkpoint.
 
       -  API
 
@@ -202,7 +202,7 @@ Procedure
                 }
             }
 
-   b. Record the ID of the restore point in the response message body.
+   b. Record the ID of the checkpoint in the response message body.
 
 #. Verify that the server is backed up successfully.
 

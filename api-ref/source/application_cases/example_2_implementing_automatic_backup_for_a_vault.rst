@@ -19,7 +19,7 @@ Involved APIs
 Procedure
 ---------
 
-#. Create a backup policy.
+#. Create a policy.
 
    -  API
 
