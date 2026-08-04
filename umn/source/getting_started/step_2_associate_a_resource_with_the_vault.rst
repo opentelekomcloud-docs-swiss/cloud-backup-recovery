@@ -18,7 +18,7 @@ Prerequisites
 -  The total size of the resources to be associated cannot be greater than the vault capacity.
 -  Resources can be associated only when they are in the statuses in the table below.
 
-   .. table:: **Table 1** Resource statuses available for association
+   .. table:: **Table 1** Statuses of the resources available for association
 
       ============= ===================
       Resource Type Status
@@ -32,21 +32,19 @@ Procedure
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. On a backup page, locate the target vault and click **Associate Server** or **Associate Disk**.
+#. Locate the target vault and click **Associate Server** or **Associate Disk**.
 
-#. In the resource list, select the resources you want to associate with the vault. After resources are selected, they are added to the list of selected resources. See :ref:`Figure 1 <cbr_02_0009__fig20466879539>`.
+#. In the resource list, select the resources you want to associate with the vault. After resources are selected, they are added to the list of selected resources.
 
-   .. _cbr_02_0009__fig20466879539:
 
    **Figure 1** Associate Server
 
    |image3|
 
-#. Click **OK**. Then on the **Associated Servers** tab page, you can view the number of resources that have been associated.
+#. Click **OK**. You can view the number of associated resources in the **Associated Servers**, **Associated Disks**, column.
 
    .. note::
 
@@ -57,20 +55,20 @@ Automatic Association
 
 If you enable automatic association for a backup vault, the vault will automatically associate the unprotected resources and back them up according to the backup policy applied to the vault.
 
--  The vault's remaining capacity should be greater than both 40 GB and the associated capacity. The vault will automatically scan and associate unprotected servers in the next backup cycle and perform backup. Remaining capacity of a vault = Total capacity of the vault - Capacity of resources associated with the vault. You can obtain the vault's total capacity and associated capacity in the **Basic Information** area on the details page of the vault. For example, if you have an 800-GB server backup vault and it has been associated with two 100-GB servers, its remaining capacity is 600 GB (800 GB - 200 GB). In this case, the vault will automatically associate unprotected servers in the next backup cycle and perform backup.
+-  The vault's remaining capacity should be greater than both 40 GB and the capacity of the associated resources (Remaining capacity of a vault = Total capacity of the vault - Capacity of resources associated with the vault). The vault will automatically scan and associate unprotected servers in the next backup cycle and perform backup. You can obtain the vault's total capacity and the capacity of associated resources in the **Basic Information** area on the details page of the vault. For example, if you have an 800-GB server backup vault and it has been associated with two 100-GB servers, its remaining capacity is 600 GB (800 GB - 200 GB). In this case, the vault will automatically associate unprotected servers in the next backup cycle and perform backup.
 -  If multiple vaults are enabled with automatic association, CBR scans their backup policies and associates resources with the vault whose next scheduled backup time is the earliest.
 -  If the capacity of the first selected vault is used up, resources will be associated with the vault whose next scheduled backup time is the second earliest.
--  If a backup policy with the earliest scheduled backup time is applied to more than one vault, CBR randomly associates the resources with one of these vaults.
+-  If a backup policy with the earliest scheduled backup time is applied to more than one vault, CBR randomly selects one of these vaults to associate the resources with.
 -  If a vault has automatic association enabled but has no backup policy applied, no resources will be automatically associated with this vault. You can manually associate unprotected resources.
--  After automatic association is disabled for a vault, the vault stops automatically scanning for unprotected resources. Associated resources are not affected.
+-  After automatic association is disabled for a vault, the vault stops automatic scanning for unprotected resources, but associated resources remain associated.
 
 #. Log in to the CBR console.
 
    a. Log in to the management console.
-   b. Click |image4| in the upper left corner and select a region.
+   b. In the upper left corner, click |image4| and select a region.
    c. Choose **Storage** > **Cloud Backup and Recovery**.
 
-#. On any backup page, locate the target vault.
+#. Locate the target vault.
 
 #. Choose **More** > **Enable Automatic Association** in the **Operation** column of the vault.
 
@@ -78,9 +76,8 @@ If you enable automatic association for a backup vault, the vault will automatic
 
 #. Check that **Automatic association** is displayed in the **Associated Servers** column of the vault list.
 
-#. (Optional) If automatic association is not required, choose **More** > **Disable Automatic Association** in the **Operation** column of the vault. See :ref:`Figure 2 <cbr_02_0009__fig10546636185>`.
+#. (Optional) If automatic association is not required, choose **More** > **Disable Automatic Association** in the **Operation** column of the vault.
 
-   .. _cbr_02_0009__fig10546636185:
 
    **Figure 2** Disabling automatic association
 

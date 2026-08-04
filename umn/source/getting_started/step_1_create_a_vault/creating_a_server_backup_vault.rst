@@ -12,9 +12,10 @@ Procedure
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
+
+#. In the navigation pane, choose **Cloud Server Backups**.
 
 #. In the upper right corner of the page, click **Create Server Backup Vault**.
 
@@ -22,7 +23,7 @@ Procedure
 
    -  **Backup**: A server backup vault stores server backups.
 
-#. Determine whether to enable backup locking .
+#. Determine whether to enable backup locking.
 
    If enabled, backups in the vault will not be deleted maliciously or by mistake, improving data reliability.
 
@@ -32,7 +33,7 @@ Procedure
 
       Backup locking cannot be disabled after it is enabled.
 
-#. (Optional) In the server list, select the servers or disks you want to back up. After the servers or disks are selected, they are added to the list of selected servers. See :ref:`Figure 1 <cbr_02_0003__fig204531717131710>`. You can also select specific disks on a server and associate them with the vault.
+#. (Optional) In the server list, select the servers or disks you want to back up. After the servers or disks are selected, they are added to the list of selected servers or disks. You can also select specific disks on a server and associate them with the vault.
 
    .. important::
 
@@ -40,9 +41,8 @@ Procedure
 
       If you want to back up only some of the disks to reduce costs, ensure that data on the backed up disks does not depend on the disks that are not backed up. Or, data inconsistency may occur.
 
-      For example, the data of an Oracle database is scattered across different disks. If only some of the disks are backed up, restoration restores only the data of the disks that have been backed up, with data on the rest of the disks unchanged. As a result, the data may be inconsistent and the Oracle database may fail to start.
+      For example, if Oracle database data is distributed across multiple disks and only some of those disks are backed up, then during restoration, only the data on the backed-up disks will be restored, while data on the remaining disks remains unchanged. This can lead to data inconsistency, potentially causing the Oracle database to fail to start.
 
-   .. _cbr_02_0003__fig204531717131710:
 
    **Figure 1** Selecting servers
 
@@ -50,14 +50,13 @@ Procedure
 
    .. note::
 
-      -  The selected servers must have not been associated with any vault and must be in the **Running** or **Stopped** state.
+      -  The selected servers must not have been associated with any vault and must be in the **Running** or **Stopped** state.
       -  You can also associate servers with the vault you are creating later if you skip this step.
 
-#. Specify a vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least the same as the size of the servers you want to back up. Also, if automatic association is enabled and a backup policy is applied to the vault, more capacity is required. If auto capacity expansion is not enabled, the vault capacity will not be automatically expanded, even if new disks are later added to associated servers or disk capacities are expanded during use.
+#. Specify the vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least as large as the servers you want to back up. Also, if automatic association is enabled and a backup policy is applied to the vault, more capacity is required. If auto capacity expansion is not enabled, the vault capacity will not be automatically expanded, even if new disks are later added to associated servers or disk capacities are expanded during use.
 
-   As the vault's used space grows, you can expand the vault capacity if it becomes insufficient. See :ref:`Figure 2 <cbr_02_0003__fig179361847142520>`.
+   You can expand the vault capacity if it becomes insufficient.
 
-   .. _cbr_02_0003__fig179361847142520:
 
    **Figure 2** Setting the vault capacity
 
@@ -76,32 +75,32 @@ Procedure
 
 #. (Optional) Configure automatic resource association.
 
-   -  If you select **Configure**, in the next backup period, CBR will automatically scan all unprotected resources, associate them with the vault, and then perform backups.
+   -  If you select **Configure**, in the next backup period, CBR will automatically scan for unprotected resources, associate them with the vault, and then perform backups.
    -  If you select **Skip**, CBR will not scan and associate unprotected resources with the vault you are creating.
 
-   If no tag is available, you can create tags on the corresponding resource page. You can search for vaults by specifying a maximum of 5 tags at a time. If you select more than one tag, the vaults with any of the specified tags will be returned.
+   If no tag is available, you can create tags on the corresponding resource page. You can specify a maximum of 5 tags at a time. If you specify more than one tag, the resources with the specified tags will be all associated.
 
 #. (Optional) Add tags to the vault.
 
-   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management.
+   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used to filter and manage vaults.
 
    :ref:`Table 1 <cbr_02_0003__table191162312815>` describes the parameters of a tag.
 
    .. _cbr_02_0003__table191162312815:
 
-   .. table:: **Table 1** Tag parameter description
+   .. table:: **Table 1** Tag parameters
 
       +-----------------------+------------------------------------------------------------------------+-----------------------+
       | Parameter             | Description                                                            | Example Value         |
       +=======================+========================================================================+=======================+
-      | Key                   | Each tag has a unique key. You can customize a key.                    | Key_0001              |
+      | Key                   | Each tag has a unique key. You can specify a key.                      | Key_0001              |
       |                       |                                                                        |                       |
       |                       | A tag key:                                                             |                       |
       |                       |                                                                        |                       |
       |                       | -  Can contain 1 to 36 Unicode characters.                             |                       |
       |                       | -  Can contain only letters, digits, hyphens (-), and underscores (_). |                       |
       +-----------------------+------------------------------------------------------------------------+-----------------------+
-      | Value                 | A tag value can be repetitive or left blank.                           | Value_0001            |
+      | Value                 | A tag value can be duplicated and can also be left empty.              | Value_0001            |
       |                       |                                                                        |                       |
       |                       | A tag value:                                                           |                       |
       |                       |                                                                        |                       |
@@ -111,7 +110,7 @@ Procedure
 
 #. Specify a name for the vault.
 
-   The name must contain 1 to 64 characters including digits, letters, underscores (_), or hyphens (-), for example, **vault-f61e**.
+   The name can contain 1 to 64 characters. Only letters, digits, underscores (_), and hyphens (-) are allowed. Example: **vault-f61e**
 
    .. note::
 

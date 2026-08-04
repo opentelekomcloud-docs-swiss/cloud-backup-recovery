@@ -5,11 +5,11 @@
 User Permissions
 ================
 
-If you need to assign different permissions to employees in your enterprise to access your CBR resources, IAM is a good choice for fine-grained permissions management. IAM provides identity authentication, permissions management, and access control, helping you secure access to your cloud resources.
+If you need to assign different permissions to employees in your enterprise to access your CBR resources, IAM is a good choice for fine-grained permissions management. IAM provides identity authentication, permissions management, and access control, helping you to control access to your cloud resources.
 
-The system provides two types of user permissions by default: user management and resource management.
+The system provides two types of permissions by default: user management permissions and resource management permissions.
 
--  User management refers to management of users, user groups, and user group permissions.
--  Resource management refers to control of operations on cloud service resources.
+-  User management permissions refer to the permissions to manage users, user groups, and user group permissions.
+-  Resource management permissions refer to the permissions to control operations on cloud service resources.
 
 For details, see section "Permission Description."

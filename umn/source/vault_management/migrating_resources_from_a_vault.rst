@@ -5,28 +5,29 @@
 Migrating Resources from a Vault
 ================================
 
-Migrating a resource means that you dissociate a resource from a vault and then associate it to another vault. All backups of the resource will be migrated to the destination vault.
+Vault resources can be migrated when service requirements change and the existing vault no longer meets the new scale or specifications.
 
-Notes and Constraints
----------------------
+Migrating a resource means that you dissociate the resource from a vault and then associate it with another vault. All backups of the resource will be migrated to the destination vault.
+
+Constraints
+-----------
 
 -  Resources can be migrated only when the source and destination vaults are in the **Available** or **Locked** state.
 -  Resources can be migrated only when no task is being executed in the source and destination vaults.
--  The remaining capacity of the destination vault must be greater than the size of resource backups to be migrated.
+-  The remaining capacity of the destination vault must be greater than the size of the resource backups to be migrated.
 -  Cross-account resource migration is currently not supported.
 -  The source and destination vaults must be in the same region.
--  The source and destination vaults for resource migration must be of the same types. For example, resources in a server backup vault can be migrated to another server backup vault, but cannot be migrated to another disk backup vault.
+-  The source and destination vaults must be of the same type. For example, resources in a server backup vault can be migrated to another server backup vault, but cannot be migrated to another disk backup vault.
 
 Procedure
 ---------
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Find the target vault and click its name. In this example, we will be using the **Cloud Server Backups** page to illustrate the process.
+#. On a required backup page, locate the vault where the target resource is associated and click its name.
 
 #. Click the **Associated Servers** tab. Find the target server and click **Migrate** in the **Operation** column.
 

@@ -9,4 +9,4 @@ No.
 
 The minimum backup granularity that CBR supports is disk.
 
-CBR backs up the status, configuration, and data of a disk at a certain time point for restoration in case of a fault.
+CBR backs up the status, configuration, and data of a disk at a certain time point for restoration in the event of a fault.

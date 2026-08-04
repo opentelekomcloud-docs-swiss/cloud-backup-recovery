@@ -5,7 +5,7 @@
 Modifying a Policy
 ==================
 
-You can modify backup policies if needed.
+You can modify existing policies if needed.
 
 Prerequisites
 -------------
@@ -17,15 +17,13 @@ Procedure
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Find the target vault and click the vault name to view its details.
+#. Locate the target vault and click the vault name to view its details.
 
-#. In the **Policies** area, click **Edit** in the row of the policy to be edited. See :ref:`Figure 1 <cbr_03_0027__fig12897922174518>`.
+#. In the **Policy** area, click **Edit** in the row of the policy to be edited.
 
-   .. _cbr_03_0027__fig12897922174518:
 
    **Figure 1** Editing a backup policy
 
@@ -33,12 +31,12 @@ Procedure
 
    Related parameters are described in :ref:`Table 1 <cbr_03_0025__table18975142115146>`.
 
-#. Click **OK**.
+#. Click **OK**. You can view the rules column of the new policy in the policy list.
 
-   If the retention rule is modified, the new rule does not necessarily apply to existing backups. For details, see
+   The new retention rule may not apply to existing backups. For details, see
 
-#. Alternatively, select **Policies** from the navigation pane on the left and edit the desired policy.
+   Alternatively, select **Policies** from the navigation pane and edit the desired policy.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000002028777013.png
+.. |image3| image:: /_static/images/en-us_image_0000002678162677.png

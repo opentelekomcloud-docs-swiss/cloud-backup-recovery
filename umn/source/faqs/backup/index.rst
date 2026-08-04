@@ -13,7 +13,7 @@ Backup
 -  :ref:`Will the Server Performance Be Affected If I Delete Its Backups? <cbr_06_0053>`
 -  :ref:`Can I Use Its Backup for Restoration After a Resource Is Deleted? <cbr_06_0055>`
 -  :ref:`How Many Backups Can I Create for a Resource? <cbr_06_0056>`
--  :ref:`Can I Stop an Ongoing Backup Task? <cbr_06_0062>`
+-  :ref:`Can I Stop an Ongoing Backup or Replication Task? <cbr_06_0062>`
 
 .. toctree::
    :maxdepth: 1
@@ -27,4 +27,4 @@ Backup
    will_the_server_performance_be_affected_if_i_delete_its_backups
    can_i_use_its_backup_for_restoration_after_a_resource_is_deleted
    how_many_backups_can_i_create_for_a_resource
-   can_i_stop_an_ongoing_backup_task
+   can_i_stop_an_ongoing_backup_or_replication_task

@@ -5,7 +5,7 @@
 Application Scenarios
 =====================
 
-CBR is ideal for data backup and restoration. The backups can maximize your data security and consistency.
+CBR is ideal for data backup and restoration. It can maximize your data security and consistency.
 
 Data Backup and Restoration
 ---------------------------

@@ -2,8 +2,8 @@
 
 .. _cbr_03_0031:
 
-Restoring Data
-==============
+Data Restoration
+================
 
 -  :ref:`Restoring from a Cloud Server Backup <cbr_03_0032>`
 -  :ref:`Creating an Image from a Cloud Server Backup <cbr_03_0016>`

@@ -5,38 +5,62 @@
 Functions
 =========
 
-:ref:`Table 1 <cbr_01_0003__table1414034615119>` lists the functions of CBR.
+This section describes main functions of CBR. You can check if a certain function is available in a region on the console.
 
 Before using CBR functions, it is recommended that you learn about :ref:`basic CBR concepts <cbr_01_0012>`.
 
-.. _cbr_01_0003__table1414034615119:
+Cloud Disk Backup
+-----------------
 
-.. table:: **Table 1** CBR functions
+:ref:`Manual disk backup <cbr_02_0007>`
 
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Category            | Function                            | Description                                                                                                                                                                                     |
-   +=====================+=====================================+=================================================================================================================================================================================================+
-   | Cloud disk backup   | Manual disk backup                  | Cloud disk backup provides snapshot-based backup for EVS disks on servers. You can back up specific disks to protect data on them.                                                              |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud disk backup   | Policy-based backup                 | You can create, modify, or delete a backup policy. A backup policy defines the schedule and retention for automatic backups.                                                                    |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud disk backup   | Backup management                   | You can set search criteria to quickly find the backups you want to manage. Then you can view their details, share, restore, or delete them if needed.                                          |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud disk backup   | Disk restoration using backups      | When a disk is faulty, or their data is lost, you can use a backup to quickly restore the data.                                                                                                 |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud disk backup   | Disk creation using backups         | You can use a disk backup to create a disk that contains the same data as the backup.                                                                                                           |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud disk backup   | Sharing a Backup                    | You can share a disk backup with other accounts to allow them to use the backup to create disks.                                                                                                |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud server backup | Manual server backup                | Cloud server backup uses the consistency snapshot technology to protect data for ECSs without the need to install the Agent. You can use CBR to back up an entire server to protect their data. |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud server backup | Policy-based backup                 | You can create, modify, or delete a backup policy. A backup policy defines the schedule and retention for automatic backups.                                                                    |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud server backup | Backup management                   | You can set search criteria to quickly find the backups you want to manage. Then you can view their details, share, restore, replicate, or delete them if needed.                               |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud server backup | Server restoration using backups    | When a server is faulty, or their data is lost, you can use a backup to quickly restore the data.                                                                                               |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud server backup | Sharing a Backup                    | You can share a server backup with other accounts to allow them to use the backup to create servers.                                                                                            |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cloud server backup | Image creation using server backups | You can create images from ECS backups and then use the images to quickly provision ECSs to restore service.                                                                                    |
-   +---------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+A cloud disk backup is a snapshot-based backup of EVS disks. You can back up a single disk or all disks to protect data on them.
+
+:ref:`Policy-based backup <cbr_03_0025>`
+
+With a backup policy, you can schedule regular backups of all disks to a vault, enabling fast restoration in case of data loss or corruption.
+
+:ref:`Backup management <cbr_03_0013>`
+
+You can set search criteria to quickly find the backup tasks you want to manage. Then you can view their details, share, restore, or delete them if needed.
+
+:ref:`Disk restoration from backups <cbr_03_0033>`
+
+When a disk is faulty, or its data is lost, you can use a backup to quickly restore the data.
+
+:ref:`Disk creation from backups <cbr_03_0017>`
+
+You can use a disk backup to create a disk that contains the same data as the backup.
+
+:ref:`Sharing a Backup <cbr_03_0014>`
+
+You can share a disk backup with other accounts. Shared backups can be used to create new servers and disks.
+
+Cloud Server Backup
+-------------------
+
+:ref:`Manual server backup <cbr_02_0006>`
+
+Cloud server backup uses the consistency snapshot technology to protect data for ECSs without the need to install the Agent on servers. It allows you to back up the entire servers.
+
+:ref:`Policy-based backup <cbr_03_0025>`
+
+With a backup policy, you can schedule regular backups of servers, enabling fast restoration in case of data loss or corruption.
+
+:ref:`Backup management <cbr_03_0013>`
+
+You can set search criteria to quickly find the backup tasks you want to manage. Then you can view their details, share, restore, or delete them if needed.
+
+:ref:`Server restoration from backups <cbr_03_0032>`
+
+When a server is faulty, or its data is lost, you can use a backup to quickly restore the data.
+
+:ref:`Sharing a Backup <cbr_03_0014>`
+
+You can share a server backup with other accounts. Shared backups can be used to create new servers.
+
+:ref:`Image creation from server backups <cbr_03_0016>`
+
+You can create images from ECS backups and then use the images to quickly provision ECSs to restore services.
+
+With cross-region replication, you can replicate backups to destination regions and then create images and use the images to provision ECSs there.

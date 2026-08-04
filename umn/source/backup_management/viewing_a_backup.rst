@@ -20,13 +20,11 @@ Procedure
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Click the **Backups** tab and set filter criteria to view the backups. See :ref:`Figure 1 <cbr_03_0013__fig5673922177>`.
+#. Click the **Backups** tab and set filter criteria to view the backups.
 
-   .. _cbr_03_0013__fig5673922177:
 
    **Figure 1** Viewing a backup
 
@@ -43,9 +41,9 @@ Procedure
          +=======================+=======================+============================================================================================================================================================================================================+
          | All statuses          | --                    | All backups are displayed if this value is selected.                                                                                                                                                       |
          +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Available             | A stable state        | A stable state of a backup after the backup is created, indicating that the backup is currently not being used.                                                                                            |
+         | Available             | A stable state        | A stable backup state after the backup is created.                                                                                                                                                         |
          |                       |                       |                                                                                                                                                                                                            |
-         |                       |                       | This state allows most of the operations.                                                                                                                                                                  |
+         |                       |                       | Most operations can be performed on a backup in this state.                                                                                                                                                |
          +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Creating              | An intermediate state | An intermediate state of a backup from the start of a backup job to the completion of this job.                                                                                                            |
          |                       |                       |                                                                                                                                                                                                            |
@@ -55,7 +53,7 @@ Procedure
          |                       |                       |                                                                                                                                                                                                            |
          |                       |                       | In the **Tasks** list, a progress bar is displayed for a restoration task in this state. If the progress bar remains unchanged for an extended time, an exception has occurred. Contact technical support. |
          +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Deleting              | An intermediate state | An intermediate state from the start of deleting the backup to the completion of deleting the backup.                                                                                                      |
+         | Deleting              | An intermediate state | An intermediate state from the start of backup deletion to its completion.                                                                                                                                 |
          |                       |                       |                                                                                                                                                                                                            |
          |                       |                       | In the **Tasks** list, a progress bar is displayed for a deletion task in this state. If the progress bar remains unchanged for an extended time, an exception has occurred. Contact technical support.    |
          +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

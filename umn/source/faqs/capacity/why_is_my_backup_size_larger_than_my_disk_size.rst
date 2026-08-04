@@ -10,7 +10,7 @@ Symptoms
 
 -  There were files on a server, and the server was backed up. After deleting some files, the server was backed up again. By viewing the used vault capacity, we came to a conclusion that the backup size was not changed or even became bigger.
 
-   For example, a user backed up a server that contains 100 files. The used vault capacity was A. Then the user deleted 10 files and backed up the server again. The used vault capacity changed to B. B may be the same as A or even larger.
+   For example, a user backed up a server containing 100 files, resulting in a used vault capacity of A. After deleting 10 files and running another backup, the used vault capacity became B. B may be the same as A or even larger.
 
 -  The ECS backup size is larger than the used disk space obtained from the file system.
 
@@ -19,7 +19,7 @@ Possible Causes
 
 Possible causes are as follows:
 
--  The backup mechanism itself causes this problem. The cloud server backups, and cloud disk backups created using CBR are all **block-level backups**. Different from file-level backups, block-level backups are performed by sector (512 bytes) each time.
--  The metadata of the file systems on the disk occupies disk space.
--  To reduce performance overhead, the file system adds a delete marker for the deleted file, but does not erase the data that has been written to the sector, and the metadata on the sector still exists. Block-level backups cannot detect whether data on a sector is deleted or not, but only determine whether a backup needs to be performed by checking whether all data blocks are zero blocks.
--  CBR determines whether data in each sector changes by comparing two snapshots. Data changes include data addition, modification, and deletion. If there are data changes, CBR further checks whether data blocks in the sector are all zero blocks. If so, the data blocks will not be backed up and will not be counted in the new backup capacity. If there are non-zero blocks, they will be backed up and will be counted in the new backup capacity. If the data is deleted but metadata in the sector is not, the data block is also recognized as a non-zero block, and backups will be performed.
+-  File system deletion: When a file is deleted from the operating system, the disk blocks it occupied are only marked as free space. The underlying data is not erased, so block-level backups still include this data.
+-  File system metadata overhead: File system management information (such as permissions and directory structures) occupies space. Although such information is not counted in the file size, it must still be backed up.
+-  Disk storage allocation: Disks are allocated in clusters, which can cause internal fragments when storing small files. In addition, hidden files (like hibernation files) also occupy physical space. As a result, the backup size may be larger than the size reported by the file system.
+-  Block-level backup: The backup size is calculated by summing all non-empty blocks, based on the disk's fixed block size. If file data is scattered across the disk, more blocks are marked non-empty, increasing backup size. (Disk-level backups in the industry are typically larger than the size reported by the file system.)

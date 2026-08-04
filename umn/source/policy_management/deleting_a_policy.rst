@@ -17,9 +17,10 @@ Procedure
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
+
+#. In the navigation pane, choose **Policies**.
 
 #. Click the **Backup Policies** tab, locate the row that contains the policy you want to delete, and click **Delete**.
 
@@ -33,7 +34,9 @@ Procedure
 
       Deleting a policy will not delete the backups generated based on the policy. You can manually delete unwanted backups.
 
-#. Confirm the information and click **Yes**.
+#. In the displayed dialog box, confirm the information, enter **DELETE**, and click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0000001580471224.png
-.. |image2| image:: /_static/images/en-us_image_0000001580631040.jpg
+   After the policy is deleted, a message appears in the upper right corner. If the policy no longer exists in the policy list, it was deleted successfully.
+
+.. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

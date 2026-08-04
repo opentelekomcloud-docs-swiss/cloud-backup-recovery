@@ -5,7 +5,7 @@
 What Are the Differences Between Backup and Disaster Recovery?
 ==============================================================
 
-The following table lists the main differences between backup and disaster recovery (DR).
+The following table lists the key differences between backup and disaster recovery (DR).
 
 .. table:: **Table 1** Differences between backup and DR
 
@@ -16,11 +16,11 @@ The following table lists the main differences between backup and disaster recov
    +----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Scenario | It offers protection against virus attacks, accidental deletions, software and hardware faults.                                                                  | It enables failover upon software and hardware faults, as well as natural disasters, such as tsunami, fires, and earthquakes, to fast recover services. When the source AZ recovers, you can easily fail back to the source AZ.                                                                                                           |
    +----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Cost     | The cost is 1 to 2% of the production system's cost.                                                                                                             | The cost is 20 to 100% of the production system's, varying with the RPO/RTO requirements. For active-active DR, the service system deployed in the standby center is required to be the same as that in the active system. In this case, the cost on infrastructure doubles.                                                              |
+   | Cost     | The cost is approximately 1% to 2% of the production system's cost.                                                                                              | The cost is 20% to 100% of the production system's cost, depending on the required RPO and RTO levels. In an active-active DR architecture, the service system deployed at the standby site must be identical to that of the active site, which doubles the infrastructure cost.                                                          |
    +----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
 
-   Recovery Point Objective (RPO) specifies the maximum acceptable period in which data can be lost.
+   Recovery Point Objective (RPO) defines the maximum acceptable amount of data loss measured in time.
 
-   Recovery Time Objective (RTO) specifies the maximum acceptable amount of time for restoring the entire system after a disaster occurs.
+   Recovery Time Objective (RTO) specifies the maximum acceptable amount of time required to restore the entire system after a disaster.

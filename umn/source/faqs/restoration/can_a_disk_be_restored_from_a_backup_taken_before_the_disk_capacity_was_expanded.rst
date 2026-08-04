@@ -2,10 +2,10 @@
 
 .. _cbr_06_0017:
 
-Can a Disk Be Restored Using Its Backups After Its Capacity Is Expanded?
-========================================================================
+Can a Disk Be Restored from a Backup Taken Before the Disk Capacity Was Expanded?
+=================================================================================
 
-Yes. After restoration, the capacity of the expanded disk goes back to the original capacity before expansion.
+Yes. When you restore a disk from a backup taken before the disk capacity was expanded, the restored disk returns to its original capacity.
 
 If you want to use the capacity added to the disk, you need to attach the restored disk to a server, log in to the server, and then manually modify the file system configuration.
 
