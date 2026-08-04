@@ -5,7 +5,7 @@
 Permissions Policies and Supported Actions
 ==========================================
 
--  :ref:`Introduction <cbr_04_0017>`
+-  :ref:`Introduction <cbr_04_0030>`
 -  :ref:`CBR Actions <cbr_04_0018>`
 
 .. toctree::
