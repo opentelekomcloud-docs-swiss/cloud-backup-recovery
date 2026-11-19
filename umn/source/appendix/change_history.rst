@@ -8,6 +8,12 @@ Change History
 +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 | Released On                       | Description                                                                                                                          |
 +===================================+======================================================================================================================================+
+| 2026-11-17                        | This issue is the fourteenth official release.                                                                                       |
+|                                   |                                                                                                                                      |
+|                                   | Updated the following content:                                                                                                       |
+|                                   |                                                                                                                                      |
+|                                   | -  Added section "Changing the Retention Rule for Existing Backups (Experimental Feature)" in the "Policy Management" chapter.       |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 | 2026-07-20                        | This issue is the thirteenth official release.                                                                                       |
 |                                   |                                                                                                                                      |
 |                                   | Updated the following content:                                                                                                       |
